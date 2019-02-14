@@ -1,0 +1,23 @@
+.d-flex {
+  display: flex;
+}
+
+.dir-flex-row {
+  flex-direction: row 
+}
+.dir-flex-col {
+  flex-direction: column 
+}
+
+.flow-row-nowrap {
+  flex-flow: row nowrap
+}
+.flow-col-nowrap {
+  flex-flow: column nowrap
+}
+.flow-row-wrap {
+  flex-flow: row wrap
+}
+.flow-col-wrap {
+  flex-flow: column wrap
+}
