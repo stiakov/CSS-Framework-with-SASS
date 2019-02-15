@@ -2617,9 +2617,6 @@ hr {
   background-color: #4F5256; }
 
 .bg-gray-50 {
-  background-color: #9E9E9E; }
-
-.bg-gray-75 {
   background-color: #FAFAFA; }
 
 .bg-gray-100 {
@@ -2632,22 +2629,22 @@ hr {
   background-color: #E0E0E0; }
 
 .bg-gray-400 {
-  background-color: #F5F5F5; }
+  background-color: #BDBDBD; }
 
 .bg-gray-500 {
-  background-color: #EEEEEE; }
+  background-color: #9E9E9E; }
 
 .bg-gray-600 {
-  background-color: #E0E0E0; }
+  background-color: #757575; }
 
 .bg-gray-700 {
-  background-color: #F5F5F5; }
+  background-color: #616161; }
 
 .bg-gray-800 {
-  background-color: #EEEEEE; }
+  background-color: #424242; }
 
 .bg-gray-900 {
-  background-color: #E0E0E0; }
+  background-color: #212121; }
 
 .d-flex {
   display: flex; }
