@@ -2667,13 +2667,69 @@ hr {
 .flow-col-wrap {
   flex-flow: column wrap; }
 
-.w33 {
+.border {
+  border-right: 0.5px solid black;
+  border-left: 0.5px solid black; }
+
+.h30 {
+  height: 30px; }
+
+.vw100 {
   height: auto;
-  width: 33vw; }
+  width: 100vw; }
+
+.w12 {
+  height: auto;
+  width: 100%; }
+
+.w11 {
+  height: auto;
+  width: 91.663%; }
+
+.w10 {
+  height: auto;
+  width: 83.33%; }
+
+.w9 {
+  height: auto;
+  width: 74.997%; }
+
+.w8 {
+  height: auto;
+  width: 66.664%; }
+
+.w7 {
+  height: auto;
+  width: 58.331%; }
+
+.w6 {
+  height: auto;
+  width: 49.998%; }
+
+.w5 {
+  height: auto;
+  width: 41.665%; }
+
+.w4 {
+  height: auto;
+  width: 33.332%; }
+
+.w3 {
+  height: auto;
+  width: 24.999%; }
+
+.w2 {
+  height: auto;
+  width: 16.666%; }
+
+.w1 {
+  height: auto;
+  width: 8.333%; }
 
 .m-lr-auto {
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  text-align: center; }
 
 .m0 {
   margin: 0; }
