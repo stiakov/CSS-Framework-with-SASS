@@ -61,20 +61,23 @@
     justify-content: space-between;
 }
 
-.first-item-flex {
-    order: -1;
+
+
+$num: 12;
+@mixin order-setter {
+  @for $i from 1 through $num {
+      .order-#{$i} { order:$i; }
+  }
 }
 
-.last-item-flex {
-    justify-content: flex-end;
-    align-self: flex-end;
-    position: absolute;
+$neg-num: -3;
+@mixin order-neg-setter {
+  @for $i from $neg-num through -1 {
+      .order-neg#{$i} { order:$i; }
+  }
 }
-
-@mixin order($val) {
-    -webkit-box-ordinal-group: $val;
-    -moz-box-ordinal-group: $val;
-    -ms-flex-order: $val;
-    -webkit-order: $val;
-    order: $val;
-}
+// .test-order{
+// @include order-setter()
+// }
+@include order-setter();
+@include order-neg-setter();

@@ -1,3 +1,47 @@
-.w33 {
-  @include size(33vw, auto);
+.border {
+  border-right: 0.5px solid black;
+  border-left: 0.5px solid black;
+}
+.h30 {
+  height: 30px;
+}
+.vw100 {
+  @include size(100vw, auto);
+}
+
+.w12 {
+  @include size(100%, auto);
+}
+.w11 {
+  @include size(8.333% * 11, auto);
+}
+.w10 {
+  @include size(8.333% * 10, auto);
+}
+.w9 {
+  @include size(8.333% * 9, auto);
+}
+.w8 {
+  @include size(8.333% * 8, auto);
+}
+.w7 {
+  @include size(8.333% * 7, auto);
+}
+.w6 {
+  @include size(8.333% * 6, auto);
+}
+.w5 {
+  @include size(8.333% * 5, auto);
+}
+.w4 {
+  @include size(8.333% * 4, auto);
+}
+.w3 {
+  @include size(8.333% * 3, auto);
+}
+.w2 {
+  @include size(8.333% * 2, auto);
+}
+.w1 {
+  @include size(8.333%, auto);
 }
