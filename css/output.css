@@ -2675,6 +2675,7 @@ hr {
   width: 33vw; }
 
 .main-container {
-  background: #F5F5F5; }
+  width: 100vw;
+  height: auto; }
 
 /*# sourceMappingURL=output.css.map */
