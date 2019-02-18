@@ -76,8 +76,6 @@ $neg-num: -3;
       .order-neg#{$i} { order:$i; }
   }
 }
-// .test-order{
-// @include order-setter()
-// }
+
 @include order-setter();
 @include order-neg-setter();

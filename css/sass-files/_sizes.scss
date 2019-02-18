@@ -1,48 +1,29 @@
-.border {
-  // border-right: 0.5px solid black;
-  // border-left: 0.5px solid black;
-  border: 0.2px solid gray;
-}
-.h30 {
-  height: 30px;
-}
-.vw100 {
-  @include size(100vw, auto);
+@mixin size-setter {
+  $leng: 12;
+  @for $i from 1 through 12 {
+    .col-#{$leng} {width: 8.333333% * $leng;}          
+    .col-#{$leng}-vw {width: 8.333333vw * $leng;}
+    $leng: $leng - 1;      
+  }
+
+  @for $i from 1 through 20 {
+    $mult: ($i * 0.5% * 10);
+    $name: ($i * 0.5 * 10);
+    .w-#{$name}-per {width: $mult;}      
+     
+  }
 }
 
-.w12 {
-  @include size(100%, auto);
+@mixin height_setter {
+  @for $i from 1 through 600 {
+      .h-#{$i} {height: #{$i}px; }
+  }
 }
-.w11 {
-  @include size(8.333% * 11, auto);
-}
-.w10 {
-  @include size(8.333% * 10, auto);
-}
-.w9 {
-  @include size(8.333% * 9, auto);
-}
-.w8 {
-  @include size(8.333% * 8, auto);
-}
-.w7 {
-  @include size(8.333% * 7, auto);
-}
-.w6 {
-  @include size(8.333% * 6, auto);
-}
-.w5 {
-  @include size(8.333% * 5, auto);
-}
-.w4 {
-  @include size(8.333% * 4, auto);
-}
-.w3 {
-  @include size(8.333% * 3, auto);
-}
-.w2 {
-  @include size(8.333% * 2, auto);
-}
-.w1 {
-  @include size(8.333%, auto);
+
+@include height_setter();
+@include size-setter();
+
+.wrapper {
+  display: flex;
+  justify-content: center;
 }
