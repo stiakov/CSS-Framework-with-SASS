@@ -1,0 +1,176 @@
+/*SETTING DEFAULT FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Merriweather:300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+/*SETTING UP FONT VARIABLES*/
+$roboto: 'Roboto', sans-serif;
+$lato: 'Lato', sans-serif;
+$merry: 'Merryweather', serif;
+
+/*MIXINS*/
+@mixin f-weight{
+    @for $i from 1 through 9{
+        .f-weight-#{$i*100} {font-weight: #{$i*100}px}
+    }
+}
+
+@mixin l-height {
+    @for $i from 1 through 20 {
+      .l-height-#{$i} {line-height: #{$i}px; }           
+}
+}
+
+@mixin indent {
+    @for $i from 1 through 10{
+        .indent-#{i} {text-indent: #{$i}px;}
+    }
+}
+
+@mixin letter-space {
+    @for $i from 1 through 10{
+        .letter-space-#{i} {letter-spacing: #{$i}px;}
+    }
+}
+@mixin vertical-alignment-px {
+    @for $i from 1 through 20 {
+      .vertical-pixel-#{$i} {vertical-align: #{$i}px; }   
+}
+}
+@mixin vertical-alignment-percentage{
+    @for $i from 1 through 10 {
+        $res:(percentage($i)/10);
+        .vertical-per#{$i*10} {vertical-align:#{$res}};           
+  }
+}
+@mixin word-space {
+    @for $i from 1 through 10{
+        .word-space-#{i} {word-spacing: #{$i}px;}
+    }
+}
+
+@mixin f-size {
+    $sizeValue: 1.2;
+    .f-size {font-size: ($sizeValue * 10) + px}; 
+    @for $i from 1 to 10{
+        .f-size-em-#{$i} {font-size: ($i)+ rem};
+    }
+}
+
+@mixin shadow-text($top, $left, $blur, $size, $color) {
+    .shadow-text{text-shadow: $top, $left, $blur, $size, $color};
+}
+
+/*INCLUDES*/
+
+@include f-weight;
+@include l-height;
+@include indent;
+@include letter-space;
+@include vertical-alignment-px;
+@include vertical-alignment-percentage;
+@include word-space;
+@include f-size;
+@include shadow-text;
+
+/*SETTING UP CLASSES WITH FIXED VALUES*/
+
+/*TRANSFORM TEXT*/
+.transform-text-none{
+    text-transform: none;
+}
+.transform-text-cap{
+    text-transform: capitalize;
+}
+.transform-text-up{
+    text-transform: uppercase;
+}
+.transform-text-low{
+    text-transform: lowercase;
+}
+.transform-text-inherit{
+    text-transform: inherit;
+}
+
+/*OVERFLOW*/
+.overflow-clip{
+    text-overflow: clip;
+}
+.overflow-ellipsis{
+    text-overflow: ellipsis;
+}
+
+/*VERTICAL ALIGN*/
+.vertical-baseline{
+    vertical-align: baseline;
+}
+.vertical-top{
+    vertical-align: top;
+}
+.vertical-middle{
+    vertical-align: middle;
+}
+.vertical-bottom{
+    vertical-align: bottom;
+}
+
+/*WHITE SPACE*/
+.whitespace-nowrap{
+    white-space: nowrap;
+}
+.whitespace-preline{
+    white-space: pre-line; /*preline makes white spaces to turn into one*/
+}
+.whitespace-prewrap{
+    white-space: pre-wrap;
+}
+
+/*TEXT DECORATION: LINES*/
+ .decoration-underline{
+     text-decoration-line: underline;
+ }
+ .decoration-overline{
+     text-decoration-line: overline;
+ }
+ .decoration-linethrough{
+     text-decoration-line: line-through;
+ }
+
+ /*TEXT DECORATION STYLE*/
+ .decoration-style-solid{
+     text-decoration-style: solid;
+ }
+ .decoration-style-double{
+     text-decoration-style: double;
+ }
+ .decoration-style-dotted{
+     text-decoration-style: dotted;
+ }
+ .decoration-style-dashed{
+     text-decoration-style: dashed;
+ }
+ .decoration-style-wavy{
+     text-decoration-style: wavy;
+ }
+
+ /*FONT STYLE*/
+ .italic-text{
+     font-style: italic;
+ }
+
+ /*FONT VARIANT*/
+ .small-cap-text{
+     font-variant: small-caps;
+ }
+
+ /*TEXT ALIGN*/
+ .text-align-center{
+     text-align: center
+ }
+ .text-align-left{
+    text-align: left;
+}
+.text-align-right{
+    text-align: right;
+}
+.text-align-justify{
+    text-align: justify;
+}
