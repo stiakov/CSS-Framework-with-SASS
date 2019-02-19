@@ -29,7 +29,7 @@ serif;
 
 @mixin indent {
     @for $i from 1 through 10 {
-        .indent-#{i} {
+        .indent-#{$i} {
             text-indent: #{$i}px;
         }
     }
@@ -37,7 +37,7 @@ serif;
 
 @mixin letter-space {
     @for $i from 1 through 10 {
-        .letter-space-#{i} {
+        .letter-space-#{$i} {
             letter-spacing: #{$i}px;
         }
     }
@@ -63,7 +63,7 @@ serif;
 
 @mixin word-space {
     @for $i from 1 through 10 {
-        .word-space-#{i} {
+        .word-space-#{$i} {
             word-spacing: #{$i}px;
         }
     }
