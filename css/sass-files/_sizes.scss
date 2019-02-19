@@ -14,6 +14,37 @@
   }
 }
 
+@mixin size-md-setter {
+  $leng: 12;
+  @for $i from 1 through 12 {
+    .col-md-#{$leng} {width: 8.333333% * $leng;}          
+    .col-md-#{$leng}-vw {width: 8.333333vw * $leng;}
+    $leng: $leng - 1;      
+  }
+
+  @for $i from 1 through 20 {
+    $mult: ($i * 0.5% * 10);
+    $name: ($i * 0.5 * 10);
+    .w-md-#{$name}-per {width: $mult;}      
+     
+  }
+}
+
+@mixin size-sm-setter {
+  $leng: 12;
+  @for $i from 1 through 12 {
+    .col-sm-#{$leng} {width: 8.333333% * $leng;}          
+    .col-sm-#{$leng}-vw {width: 8.333333vw * $leng;}
+    $leng: $leng - 1;      
+  }
+
+  @for $i from 1 through 20 {
+    $mult: ($i * 0.5% * 10);
+    $name: ($i * 0.5 * 10);
+    .w-sm-#{$name}-per {width: $mult;}      
+  }
+}
+
 @mixin height_setter {
   @for $i from 1 through 600 {
       .h-#{$i} {height: #{$i}px; }
@@ -27,3 +58,44 @@
   display: flex;
   justify-content: center;
 }
+
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @include size-md-setter();
+            
+            
+        }
+    }
+}
+
+@mixin sm($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @include size-sm-setter();
+            
+            
+        }
+    }
+}
+
+@include mq('tablet-wide', 'max');
+@include sm('tablet-small', 'max');
