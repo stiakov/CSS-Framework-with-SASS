@@ -1,32 +1,41 @@
 
 /*ALIGNING IMAGES*/
 @mixin none-float {
-  float: none !important;
+  .none-float{
+    float: none;}
 }
 @mixin right-float {
-  float: right !important;
+  .right-float{
+    float: right;}
 }
 @mixin left-float {
-  float: left !important;
+  .left-float{
+    float: left;}
 }
-@mixin clear() {
+@mixin clear {
+  .clear{
     display: block;
     clear: both;
     content: "";
+  }
 }
 
 @mixin fluid-img {
+  .fluid-img{
   max-width: 100%;
   height: auto;
   // this makes it responsive
 }
+}
 @mixin img-opacity {
   $count: 5;
+  $num:0.05;
   @for $i from 1 through 20{
-    $res: (percentage($count)/100);
+    $res: ($count);
     .img-opacity-#{$count} {
-      opacity:#{$res};
-      $count: $count +5;
+      opacity:$num;
+      $count: $count + 5;
+      $num: $num + .05;
     }
 }
 }
@@ -36,7 +45,7 @@
   @for $i from 1 through 20{
     $res: (percentage($count)/100);
     .img-grayscale-#{$count} {
-      filter:#{$res};
+      filter: grayscale($res);
       $count: $count +5;
     }
 }
@@ -46,7 +55,7 @@
 @include none-float;
 @include right-float;
 @include left-float;
-@include clear();
+@include clear;
 @include fluid-img;
 @include img-opacity;
 @include img-grayscale;
