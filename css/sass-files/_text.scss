@@ -41,7 +41,7 @@ $pacifico: 'Pacifico', cursive;
 @mixin f-weight {
   @for $i from 1 through 9 {
     .f-weight-#{$i*100} {
-      font-weight: #{$i*100}px
+      font-weight: #{$i*100};
     }
   }
 }
