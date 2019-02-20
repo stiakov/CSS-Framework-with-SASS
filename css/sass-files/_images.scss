@@ -1,0 +1,52 @@
+
+/*ALIGNING IMAGES*/
+@mixin none-float {
+  float: none !important;
+}
+@mixin right-float {
+  float: right !important;
+}
+@mixin left-float {
+  float: left !important;
+}
+@mixin clear() {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+@mixin fluid-img {
+  max-width: 100%;
+  height: auto;
+  // this makes it responsive
+}
+@mixin img-opacity {
+  $count: 5;
+  @for $i from 1 through 20{
+    $res: (percentage($count)/100);
+    .img-opacity-#{$count} {
+      opacity:#{$res};
+      $count: $count +5;
+    }
+}
+}
+
+@mixin img-grayscale {
+  $count: 5;
+  @for $i from 1 through 20{
+    $res: (percentage($count)/100);
+    .img-grayscale-#{$count} {
+      filter:#{$res};
+      $count: $count +5;
+    }
+}
+}
+
+/*INCLUDES*/
+@include none-float;
+@include right-float;
+@include left-float;
+@include clear();
+@include fluid-img;
+@include img-opacity;
+@include img-grayscale;
