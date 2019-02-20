@@ -72,7 +72,7 @@ $pacifico: 'Pacifico', cursive;
 
 @mixin vertical-alignment-px {
   @for $i from 1 through 20 {
-    .vertical-pixel-#{$i} {
+    .vertical-align-#{$i} {
       vertical-align: #{$i}px;
     }
   }
@@ -81,7 +81,7 @@ $pacifico: 'Pacifico', cursive;
 @mixin vertical-alignment-percentage {
   @for $i from 1 through 10 {
     $res: (percentage($i)/10);
-    .vertical-per#{$i*10} {
+    .vertical-align-#{($i*10)}-per {
       vertical-align:#{$res}
     }
     ;

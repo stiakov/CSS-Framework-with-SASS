@@ -6,19 +6,19 @@
   @for $i from 1 through 10 {
     .solid-border-#{$i} {
       border: #{$i}px,
-      solid;
+      solid $gray;
     }
     .dotted-border#{$i} {
       border: #{$i}px,
-      dotted;
+      dotted $gray;
     }
     .dashed-border-#{$i} {
       border: #{$i}px,
-      dashed;
+      dashed $gray;
     }
     .double-border-#{$i} {
       border: #{$i}px,
-      double;
+      double $gray;
     }
   }
 }
@@ -26,27 +26,27 @@
 @mixin direction-border {
   @for $i from 1 through 10 {
     .top-border-#{$i} {
-      border-top: #{$i}px,
-      solid;
+      border-top: #{$i}px
+      solid $gray;
     }
     .bottom-border#{$i} {
-      border-bottom: #{$i}px,
-      solid;
+      border-bottom: #{$i}px
+      solid $gray;
     }
     .right-border-#{$i} {
-      border-right: #{$i}px,
-      solid;
+      border-right: #{$i}px
+      solid $gray;
     }
     .left-border-#{$i} {
-      border-left: #{$i}px,
-      solid;
+      border-left: #{$i}px
+      solid $gray;
     }
   }
 }
 
 @mixin rounded-border {
   @for $i from 1 through 25 {
-    .rounded-border-#{$i} {
+    .table-rounded-border-#{$i} {
       border-radius: #{$i}px;
     }
   }
@@ -54,7 +54,7 @@
 
 @mixin spacing-borders {
   @for $i from 1 through 20 {
-    .spacing-border-px-#{$i} {
+    .table-spacing-border-px-#{$i} {
       border-spacing: #{$i}px;
     }
   }
@@ -63,13 +63,13 @@
 @mixin spacing-borders-percentage {
   @for $i from 1 through 9 {
     $res: (percentage($i)/100);
-    .spacing-border-per#{$i} {
+    .spacing-border-#{$i}-per {
       border-spacing:#{$res};
     }
   }
   @for $i from 1 through 10 {
     $res: (percentage($i)/10);
-    .spacing-border-per#{$i*10} {
+    .spacing-border-#{$i*10}-per {
       border-spacing:#{$res};
     }
   }
@@ -77,14 +77,14 @@
 
 @mixin table-width {
   @for $i from 1 through 30 {
-    .t-width-#{$i} {
+    .table-w-#{$i} {
       width: #{$i}px;
     }
   }
   $count: 5;
   @for $i from 1 through 20{
     $res: (percentage($count)/100);
-    .t-width-per#{$count} {
+    .table-w-#{$count}-per {
       width:#{$res};
       $count: $count +5;
     }
@@ -93,14 +93,14 @@
 
 @mixin table-height {
   @for $i from 1 through 30 {
-    .t-height-#{$i} {
+    .table-h-#{$i} {
       height: #{$i}px;
     }
   }
   $count: 5;
   @for $i from 1 through 20{
     $res: (percentage($count)/100);
-    .t-height-per#{$count} {
+    .table-h-#{$count}-per {
       height:#{$res};
       $count: $count +5;
     }
@@ -108,14 +108,14 @@
 }
 @mixin table-padding {
   @for $i from 1 through 30 {
-    .t-padding-#{$i} {
+    .table-padding-#{$i} {
       padding: #{$i}px;
     }
   }
   $count: 5;
   @for $i from 1 through 20{
     $res: (percentage($count)/100);
-    .t-padding-per#{$count} {
+    .table-padding-#{$count}-per {
       padding:#{$res};
       $count: $count +5;
     }
