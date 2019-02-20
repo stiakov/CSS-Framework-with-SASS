@@ -1,6 +1,6 @@
 /*SETTING DEFAULT FONTS*/
 
-@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Merriweather:300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Merriweather:300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Anton|Arvo:400,400i,700,700i|Pacifico');
 /*SETTING UP FONT VARIABLES*/
 
 $roboto: 'Roboto',
@@ -9,16 +9,31 @@ $lato: 'Lato',
 sans-serif;
 $merry: 'Merryweather',
 serif;
-.f-family-#{$roboto} {
+
+$arvo: 'Arvo', serif;
+$anton: 'Anton', sans-serif;
+$pacifico: 'Pacifico', cursive;
+.f-family-roboto {
   font-family: $roboto;
 }
 
-.f-family-#{$lato} {
+.f-family-lato {
   font-family: $lato;
 }
 
-.f-family-#{$merry} {
+.f-family-merry {
   font-family: $merry;
+}
+.f-family-arvo {
+  font-family: $arvo;
+}
+
+.f-family-anton {
+  font-family: $anton;
+}
+
+.f-family-pacifico {
+  font-family: $pacifico;
 }
 
 /*MIXINS*/

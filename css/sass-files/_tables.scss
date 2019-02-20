@@ -1,0 +1,77 @@
+/*TABLE STYLING*/
+
+/*BORDERS*/
+
+@mixin styles-border {
+  @for $i from 1 through 10 {
+    .solid-border-#{i} {
+      border: #{$i}px,
+      solid;
+    }
+    .dotted-border#{$i} {
+      border: #{$i}px,
+      dotted;
+    }
+    .dashed-border-#{$i} {
+      border: #{$i}px,
+      dashed;
+    }
+    .double-border-#{$i} {
+      border: #{$i}px,
+      double;
+    }
+  }
+}
+
+@mixin rounded-border {
+  @for $i from 1 through 25 {
+    .rounded-border-#{$i} {
+      border-radius: #{$i}px;
+    }
+  }
+}
+
+@mixin spacing-borders {
+  @for $i from 1 through 20 {
+    .spacing-border-pixel-#{$i} {
+      border-spacing: #{$i}px;
+    }
+  }
+}
+
+@mixin spacing-borders-percentage {
+  @for $i from 1 through 10 {
+    $res: (percentage($i)/100);
+    .spacing-border-per#{$i} {
+      border-spacing:#{$res};}
+  }
+  @for $i from 1 through 10 {
+  $res: (percentage($i)/10);
+  .spacing-border-per#{$i*10} {
+    border-spacing:#{$res};}
+}
+}
+
+/*INCLUDES*/
+
+@include styles-border;
+@include rounded-border;
+@include spacing-borders;
+@include spacing-borders-percentage;
+/*FIXED PROPERTIES*/
+
+.hidden-border {
+  border-style: hidden;
+}
+
+.no-border {
+  border-style: none;
+}
+
+.collapse-borders {
+  border-collapse: collapse;
+}
+
+.separate-borders {
+  border-collapse: separate;
+}
