@@ -23,6 +23,27 @@
   }
 }
 
+@mixin direction-border {
+  @for $i from 1 through 10 {
+    .top-border-#{i} {
+      border-top: #{$i}px,
+      solid;
+    }
+    .bottom-border#{$i} {
+      border-bottom: #{$i}px,
+      solid;
+    }
+    .dashed-border-#{$i} {
+      border-right: #{$i}px,
+      solid;
+    }
+    .double-border-#{$i} {
+      border-left: #{$i}px,
+      solid;
+    }
+  }
+}
+
 @mixin rounded-border {
   @for $i from 1 through 25 {
     .rounded-border-#{$i} {
@@ -58,7 +79,8 @@
 @include rounded-border;
 @include spacing-borders;
 @include spacing-borders-percentage;
-/*FIXED PROPERTIES*/
+
+/*SETTING UP CLASSES WITH FIXED VALUES*/
 
 .hidden-border {
   border-style: hidden;
