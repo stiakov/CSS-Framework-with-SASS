@@ -4,7 +4,7 @@
 
 @mixin styles-border {
   @for $i from 1 through 10 {
-    .solid-border-#{i} {
+    .solid-border-#{$i} {
       border: #{$i}px,
       solid;
     }
@@ -25,7 +25,7 @@
 
 @mixin direction-border {
   @for $i from 1 through 10 {
-    .top-border-#{i} {
+    .top-border-#{$i} {
       border-top: #{$i}px,
       solid;
     }
@@ -33,11 +33,11 @@
       border-bottom: #{$i}px,
       solid;
     }
-    .dashed-border-#{$i} {
+    .right-border-#{$i} {
       border-right: #{$i}px,
       solid;
     }
-    .double-border-#{$i} {
+    .left-border-#{$i} {
       border-left: #{$i}px,
       solid;
     }
@@ -54,31 +54,83 @@
 
 @mixin spacing-borders {
   @for $i from 1 through 20 {
-    .spacing-border-pixel-#{$i} {
+    .spacing-border-px-#{$i} {
       border-spacing: #{$i}px;
     }
   }
 }
 
 @mixin spacing-borders-percentage {
-  @for $i from 1 through 10 {
+  @for $i from 1 through 9 {
     $res: (percentage($i)/100);
     .spacing-border-per#{$i} {
-      border-spacing:#{$res};}
+      border-spacing:#{$res};
+    }
   }
   @for $i from 1 through 10 {
-  $res: (percentage($i)/10);
-  .spacing-border-per#{$i*10} {
-    border-spacing:#{$res};}
-}
+    $res: (percentage($i)/10);
+    .spacing-border-per#{$i*10} {
+      border-spacing:#{$res};
+    }
+  }
 }
 
+@mixin table-width {
+  @for $i from 1 through 30 {
+    .t-width-#{$i} {
+      width: #{$i}px;
+    }
+  }
+  $count: 5;
+  @for $i from 1 through 20{
+    $res: (percentage($count)/100);
+    .t-width-per#{$count} {
+      width:#{$res};
+      $count: $count +5;
+    }
+  }
+}
+
+@mixin table-height {
+  @for $i from 1 through 30 {
+    .t-height-#{$i} {
+      height: #{$i}px;
+    }
+  }
+  $count: 5;
+  @for $i from 1 through 20{
+    $res: (percentage($count)/100);
+    .t-height-per#{$count} {
+      height:#{$res};
+      $count: $count +5;
+    }
+  }
+}
+@mixin table-padding {
+  @for $i from 1 through 30 {
+    .t-padding-#{$i} {
+      padding: #{$i}px;
+    }
+  }
+  $count: 5;
+  @for $i from 1 through 20{
+    $res: (percentage($count)/100);
+    .t-padding-per#{$count} {
+      padding:#{$res};
+      $count: $count +5;
+    }
+  }
+}
 /*INCLUDES*/
 
 @include styles-border;
 @include rounded-border;
+@include direction-border;
 @include spacing-borders;
 @include spacing-borders-percentage;
+@include table-width;
+@include table-height;
+@include table-padding;
 
 /*SETTING UP CLASSES WITH FIXED VALUES*/
 
@@ -96,4 +148,29 @@
 
 .separate-borders {
   border-collapse: separate;
+}
+
+/*TEXT ALIGN*/
+.align-right{
+  text-align: right;
+}
+.align-left{
+  text-align: left;
+}
+.align-center{
+  text-align: center;
+}
+
+/*TABLE EFFECTS*/
+.table-row:hover{
+  background-color: #f5f5f5; 
+}
+.stripped-table{
+  tr:nth-child(even){
+    background-color: #f2f2f2;
+  }
+}
+
+.hidden-cells{
+  empty-cells: hide;
 }
