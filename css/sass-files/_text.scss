@@ -1,18 +1,19 @@
 /*SETTING DEFAULT FONTS*/
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Merriweather:300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Anton|Arvo:400,400i,700,700i|Pacifico');
-/*SETTING UP FONT VARIABLES*/
 
+//Estableciendo variables para las fuentes
 $roboto: 'Roboto',
 sans-serif;
 $lato: 'Lato',
 sans-serif;
 $merry: 'Merryweather',
 serif;
-
 $arvo: 'Arvo', serif;
 $anton: 'Anton', sans-serif;
 $pacifico: 'Pacifico', cursive;
+
+//Creando las clases para font-family
 .f-family-roboto {
   font-family: $roboto;
 }
@@ -38,6 +39,7 @@ $pacifico: 'Pacifico', cursive;
 
 /*MIXINS*/
 
+//Crea clases para font weight con un rango de 100 a 900, con saltos de 100
 @mixin f-weight {
   @for $i from 1 through 9 {
     .font-weight-#{$i*100} {
@@ -46,6 +48,7 @@ $pacifico: 'Pacifico', cursive;
   }
 }
 
+//Crea clases para line-height con un rango de 1 a 20px y saltos de 1px
 @mixin l-height {
   @for $i from 1 through 20 {
     .line-height-#{$i} {
@@ -54,6 +57,7 @@ $pacifico: 'Pacifico', cursive;
   }
 }
 
+//Establece clases para la indentación de texto con rango de 1 a 10px con salto de 1px
 @mixin indent {
   @for $i from 1 through 10 {
     .indent-#{$i} {
@@ -62,6 +66,7 @@ $pacifico: 'Pacifico', cursive;
   }
 }
 
+//Establece espacio entre letras con rango de 1 a 10px con salto de 1px
 @mixin letter-space {
   @for $i from 1 through 10 {
     .letter-space-#{$i} {
@@ -70,6 +75,7 @@ $pacifico: 'Pacifico', cursive;
   }
 }
 
+//Establece el alineamiento vertical en pixeles con rango de 1 a 20px y saltos de 1px
 @mixin vertical-alignment-px {
   @for $i from 1 through 20 {
     .vertical-align-#{$i} {
@@ -78,6 +84,7 @@ $pacifico: 'Pacifico', cursive;
   }
 }
 
+//Establece el alineamiento vertical en porcentaje con rango de 10 a 100% en saltos de 10%
 @mixin vertical-alignment-percentage {
   @for $i from 1 through 10 {
     $res: (percentage($i)/10);
@@ -87,6 +94,7 @@ $pacifico: 'Pacifico', cursive;
   }
 }
 
+//Establece espacio entre palabras con rango de 1 a 10px con salto de 1px
 @mixin word-space {
   @for $i from 1 through 10 {
     .word-space-#{$i} {
@@ -95,6 +103,7 @@ $pacifico: 'Pacifico', cursive;
   }
 }
 
+//Establece un los tamaños de fuente en un rango de 8 a 44px y en rem con rango de 1 a 41rem
 @mixin f-size {
   @for $i from 1 to 37 {
     $sizeValue: 7 + $i;
@@ -120,95 +129,111 @@ $pacifico: 'Pacifico', cursive;
 @include vertical-alignment-percentage;
 @include word-space;
 @include f-size;
+
 /*SETTING UP CLASSES WITH FIXED VALUES*/
 
-/*HIDING TEXT*/
-
+//Establece una clase para no mostrar un elemento
 .display-none {
   display: none;
 }
 
 /*TRANSFORM TEXT*/
 
+//Clase para evitar modificar el estilo de texto
 .transform-text-none {
   text-transform: none;
 }
 
+//Establece la primera letra de todas las palabras en mayúscula
 .transform-text-cap {
   text-transform: capitalize;
 }
 
+//Transforma todas las palabras a mayúscula
 .transform-text-up {
   text-transform: uppercase;
 }
 
+//Transforma todas las palabras a minúscula
 .transform-text-low {
   text-transform: lowercase;
 }
 
+//Establece que el texto se quede con las propiedades que le han sido heredadas
 .transform-text-inherit {
   text-transform: inherit;
 }
 
 /*OVERFLOW*/
 
+//Indica que el texto que rebasa el contenedor no es accesible
 .overflow-clip {
   text-overflow: clip;
 }
 
+//Establece que al rebasar el contenedor se presenta un ("...") para indicar existe más texto
 .overflow-ellipsis {
   text-overflow: ellipsis;
 }
 
 /*VERTICAL ALIGN*/
 
+//Establece una lineación con la base del elemento padre
 .vertical-baseline {
   vertical-align: baseline;
 }
 
+//Establece una lineación con el elemento más alto de la línea
 .vertical-top {
   vertical-align: top;
 }
 
+//Establece que el elemento esta centrado según el elemento padre
 .vertical-middle {
   vertical-align: middle;
 }
 
+//Establece una lineación con el elemento más bajo de la línea
 .vertical-bottom {
   vertical-align: bottom;
 }
 
 /*WHITE SPACE*/
 
+//Las secuencias de espacios en blanco se colapsarán en un solo espacio en blanco. El texto nunca se ajustará a la siguiente línea. El texto continúa en la misma línea hasta que se encuentra una etiqueta <br>
 .whitespace-nowrap {
   white-space: nowrap;
 }
 
+//Integra todos los espacios en blanco consecutivos de la línea en uno sólo
 .whitespace-preline {
   white-space: pre-line;
-  /*preline makes white spaces to turn into one*/
 }
-
+//El texto se ajustará cuando sea necesario, y en los saltos de línea
 .whitespace-prewrap {
   white-space: pre-wrap;
 }
 
 /*TEXT DECORATION: LINES*/
 
+//Coloca línea bajo el texto
 .text-underline {
   text-decoration-line: underline;
 }
 
+//Coloca línea sobre el texto
 .text-overline {
   text-decoration-line: overline;
 }
-
+//Coloca línea a través el texto
 .text-line-through {
   text-decoration-line: line-through;
 }
 
-/*TEXT DECORATION STYLE*/
+/*TEXT DECORATION STYLE
 
+Establece que la línea que decora el texto puede tomar los siguientes estilos: sólido, doble, punteada y con guión.
+*/
 .text-line-solid {
   text-decoration-style: solid;
 }
@@ -231,17 +256,22 @@ $pacifico: 'Pacifico', cursive;
 
 /*FONT STYLE*/
 
+//Establece el texto en itálico
 .text-italic {
   font-style: italic;
 }
 
 /*FONT VARIANT*/
 
+//Hace que todo el texto sea en mayúsculas pero con proporción de altura, es decir, la primera letra aparecerá de mayor tamaño
 .text-small-cap {
   font-variant: small-caps;
 }
 
-/*TEXT ALIGN*/
+/*TEXT ALIGN
+
+Establece que el texto puede alinearse a centro, izquierda, derecha y de manera justificada
+*/
 
 .text-align-center {
   text-align: center

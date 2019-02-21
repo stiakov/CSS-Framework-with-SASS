@@ -1,6 +1,6 @@
-/*TABLE STYLING*/
+/*TABLE STYLING
 
-/*BORDERS*/
+Crea bordes en los estilos: sólido, punteado, guión y doble en un rango de 1 a 10px */
 
 @mixin styles-border {
   @for $i from 1 through 10 {
@@ -23,6 +23,8 @@
   }
 }
 
+//Crea bordes específicos (top, bottom, left, right) en línea solida color gris que van de 1 a 10px
+
 @mixin direction-border {
   @for $i from 1 through 10 {
     .border-top-#{$i} {
@@ -44,6 +46,7 @@
   }
 }
 
+//Crea bordes redondeados para tablas, oscila entre el 1% y el 25% 
 @mixin rounded-border {
   @for $i from 1 through 25 {
     .table-rounded-border-#{$i} {
@@ -52,6 +55,7 @@
   }
 }
 
+//Crea espacio entre los bordes de las celdas, con un rango de 1px a 20px
 @mixin spacing-borders {
   @for $i from 1 through 20 {
     .table-spacing-border-px-#{$i} {
@@ -60,6 +64,7 @@
   }
 }
 
+//Crea espacio entre los bordes de las celdas, con un rango de 1 a 9 con saltos de 1% y de 10 a 100 con saltos de 10%
 @mixin spacing-borders-percentage {
   @for $i from 1 through 9 {
     $res: (percentage($i)/100);
@@ -75,6 +80,7 @@
   }
 }
 
+//Crea padding para la tabla en un rango de 1 a 30px con saltos de 1px y de 5 a 100% con saltos de 5%
 @mixin table-padding {
   @for $i from 1 through 30 {
     .table-padding-#{$i} {
@@ -100,6 +106,8 @@
 @include table-padding;
 
 /*DEFAULT BASIC TABLE SETTING*/
+
+//Settings de la tabla por default
 .table{
 	border-spacing: 0;
   width: 100%;
@@ -108,33 +116,42 @@
 
 /*SETTING UP CLASSES WITH FIXED VALUES*/
 
+//Esconde los bordes de la tabla
 .hidden-border {
   border-style: hidden;
 }
 
+//Elimina el estilo de los bordes
 .no-border {
   border-style: none;
 }
 
+//Desaparece el espacio entre bordes
 .collapse-borders {
   border-collapse: collapse;
 }
 
+//Separa los bordes de las celdas, de manera que hay un espacio entre ellas
 .separate-borders {
   border-collapse: separate;
 }
 
 
 /*TABLE EFFECTS*/
+
+//Efecto de colorear una fila de color gris al pasar el puntero por ella
 .table-row:hover{
   background-color: $gray300;
 }
+
+//Estilo de líneas grises de fondo intercaladas
 .stripped-table{
   tr:nth-child(even){
     background-color: #c7c7c7;
   }
 }
 
+//Esconde celdas dentro de una tabla
 .hidden-cells{
   empty-cells: hide;
 }
