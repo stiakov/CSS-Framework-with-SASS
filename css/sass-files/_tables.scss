@@ -5,20 +5,20 @@
 @mixin styles-border {
   @for $i from 1 through 10 {
     .solid-border-#{$i} {
-      border: #{$i}px,
-      solid $gray;
+      border: #{$i}px
+      solid $gray300;
     }
     .dotted-border#{$i} {
-      border: #{$i}px,
-      dotted $gray;
+      border: #{$i}px
+      dotted $gray300;
     }
     .dashed-border-#{$i} {
-      border: #{$i}px,
-      dashed $gray;
+      border: #{$i}px
+      dashed $gray300;
     }
     .double-border-#{$i} {
-      border: #{$i}px,
-      double $gray;
+      border: #{$i}px
+      double $gray300;
     }
   }
 }
@@ -27,19 +27,19 @@
   @for $i from 1 through 10 {
     .top-border-#{$i} {
       border-top: #{$i}px
-      solid $gray;
+      solid $gray300;
     }
     .bottom-border#{$i} {
       border-bottom: #{$i}px
-      solid $gray;
+      solid $gray300;
     }
     .right-border-#{$i} {
       border-right: #{$i}px
-      solid $gray;
+      solid $gray300;
     }
     .left-border-#{$i} {
       border-left: #{$i}px
-      solid $gray;
+      solid $gray300;
     }
   }
 }
