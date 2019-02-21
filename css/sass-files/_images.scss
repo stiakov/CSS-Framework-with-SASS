@@ -1,25 +1,31 @@
 
 /*ALIGNING IMAGES*/
 @mixin none-float {
-  .none-float{
+  .float-none{
     float: none;}
-}
-@mixin right-float {
-  .right-float{
-    float: right;}
-}
-@mixin left-float {
-  .left-float{
-    float: left;}
-}
-@mixin clear {
-  .clear{
-    display: block;
-    clear: both;
-    content: "";
   }
-}
-
+  @mixin right-float {
+    .float-right{
+      float: right;}
+    }
+    @mixin left-float {
+      .float-left{
+        float: left;}
+      }
+      @mixin clear {
+        .clear{
+          display: block;
+          clear: both;
+          content: "";
+        }
+      }
+      
+/*
+.float-none -> Asigna float none a los elementos que tienen posición diferente a absolut
+.float-right -> Asigna float none a los elementos que tienen posición diferente a absolut
+.float-left -> Asigna float none a los elementos que tienen posición diferente a absolut
+.clear -> Limpia ambos lados del contenedor para evitar tener cajas flotantes adyacentes.
+*/
 @mixin fluid-img {
   .fluid-img{
   max-width: 100%;

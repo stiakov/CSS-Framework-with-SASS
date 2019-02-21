@@ -4,19 +4,19 @@
 
 @mixin styles-border {
   @for $i from 1 through 10 {
-    .solid-border-#{$i} {
+    .border-solid-#{$i} {
       border: #{$i}px
       solid $gray300;
     }
-    .dotted-border#{$i} {
+    .border-dotted-#{$i} {
       border: #{$i}px
       dotted $gray300;
     }
-    .dashed-border-#{$i} {
+    .border-dashed-#{$i} {
       border: #{$i}px
       dashed $gray300;
     }
-    .double-border-#{$i} {
+    .border-double-#{$i} {
       border: #{$i}px
       double $gray300;
     }
@@ -25,19 +25,19 @@
 
 @mixin direction-border {
   @for $i from 1 through 10 {
-    .top-border-#{$i} {
+    .border-top-#{$i} {
       border-top: #{$i}px
       solid $gray300;
     }
-    .bottom-border#{$i} {
+    .border-bottom-#{$i} {
       border-bottom: #{$i}px
       solid $gray300;
     }
-    .right-border-#{$i} {
+    .border-right-#{$i} {
       border-right: #{$i}px
       solid $gray300;
     }
-    .left-border-#{$i} {
+    .border-left-#{$i} {
       border-left: #{$i}px
       solid $gray300;
     }
@@ -75,37 +75,6 @@
   }
 }
 
-@mixin table-width {
-  @for $i from 1 through 30 {
-    .table-w-#{$i} {
-      width: #{$i}px;
-    }
-  }
-  $count: 5;
-  @for $i from 1 through 20{
-    $res: (percentage($count)/100);
-    .table-w-#{$count}-per {
-      width:#{$res};
-      $count: $count +5;
-    }
-  }
-}
-
-@mixin table-height {
-  @for $i from 1 through 30 {
-    .table-h-#{$i} {
-      height: #{$i}px;
-    }
-  }
-  $count: 5;
-  @for $i from 1 through 20{
-    $res: (percentage($count)/100);
-    .table-h-#{$count}-per {
-      height:#{$res};
-      $count: $count +5;
-    }
-  }
-}
 @mixin table-padding {
   @for $i from 1 through 30 {
     .table-padding-#{$i} {
@@ -128,8 +97,6 @@
 @include direction-border;
 @include spacing-borders;
 @include spacing-borders-percentage;
-@include table-width;
-@include table-height;
 @include table-padding;
 
 /*DEFAULT BASIC TABLE SETTING*/
@@ -160,11 +127,11 @@
 
 /*TABLE EFFECTS*/
 .table-row:hover{
-  background-color: #f5f5f5; //to be updated
+  background-color: $gray300;
 }
 .stripped-table{
   tr:nth-child(even){
-    background-color: #f2f2f2;
+    background-color: #c7c7c7;
   }
 }
 

@@ -40,7 +40,7 @@ $pacifico: 'Pacifico', cursive;
 
 @mixin f-weight {
   @for $i from 1 through 9 {
-    .f-weight-#{$i*100} {
+    .font-weight-#{$i*100} {
       font-weight: #{$i*100};
     }
   }
@@ -48,7 +48,7 @@ $pacifico: 'Pacifico', cursive;
 
 @mixin l-height {
   @for $i from 1 through 20 {
-    .l-height-#{$i} {
+    .line-height-#{$i} {
       line-height: #{$i}px;
     }
   }
@@ -81,10 +81,9 @@ $pacifico: 'Pacifico', cursive;
 @mixin vertical-alignment-percentage {
   @for $i from 1 through 10 {
     $res: (percentage($i)/10);
-    .vertical-align-#{($i*10)}-per {
+    .vertical-align-#{$i * 10}-per {
       vertical-align:#{$res}
     }
-    ;
   }
 }
 
@@ -99,14 +98,13 @@ $pacifico: 'Pacifico', cursive;
 @mixin f-size {
   @for $i from 1 to 37 {
     $sizeValue: 7 + $i;
-    .f-size-#{$sizeValue} {
+    .font-size-#{$sizeValue} {
       font-size: ($sizeValue) + px
     }
-    ;
   }
   @for $i from 1 to 41 {
-    .f-size-rem-#{$i} {
-      font-size: ($i/10)+ rem
+    .font-size-#{$i}-rem {
+      font-size: ($i/10) + rem
     }
     ;
   }
@@ -126,7 +124,7 @@ $pacifico: 'Pacifico', cursive;
 
 /*HIDING TEXT*/
 
-.hide-text {
+.display-none {
   display: none;
 }
 
@@ -197,49 +195,49 @@ $pacifico: 'Pacifico', cursive;
 
 /*TEXT DECORATION: LINES*/
 
-.decoration-underline {
+.text-underline {
   text-decoration-line: underline;
 }
 
-.decoration-overline {
+.text-overline {
   text-decoration-line: overline;
 }
 
-.decoration-linethrough {
+.text-line-through {
   text-decoration-line: line-through;
 }
 
 /*TEXT DECORATION STYLE*/
 
-.decoration-style-solid {
+.text-line-solid {
   text-decoration-style: solid;
 }
 
-.decoration-style-double {
+.text-line-double {
   text-decoration-style: double;
 }
 
-.decoration-style-dotted {
+.text-line-dotted {
   text-decoration-style: dotted;
 }
 
-.decoration-style-dashed {
+.text-line-dashed {
   text-decoration-style: dashed;
 }
 
-.decoration-style-wavy {
+.text-line-wavy {
   text-decoration-style: wavy;
 }
 
 /*FONT STYLE*/
 
-.italic-text {
+.text-italic {
   font-style: italic;
 }
 
 /*FONT VARIANT*/
 
-.small-cap-text {
+.text-small-cap {
   font-variant: small-caps;
 }
 
@@ -260,5 +258,3 @@ $pacifico: 'Pacifico', cursive;
 .text-align-justify {
   text-align: justify;
 }
-
-/*FONT FAMILY*/
