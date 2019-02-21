@@ -26,28 +26,28 @@
     flex-flow: column wrap
 }
 
-.at-start-vflex {
+.at-start-hflex {
     justify-content: flex-start;
 }
 
-.at-center-vflex {
+.at-center-hflex {
     justify-content: center;
 }
 
-.at-end-vflex {
+.at-end-hflex {
     justify-content: flex-end;
 }
 
-.at-top-hflex {
-    align-items: flex-start;
+.at-top-vflex {
+    align-content: flex-start;
 }
 
-.at-middle-hflex {
-    align-items: center;
+.at-middle-vflex {
+    align-content: center;
 }
 
-.at-bottom-hflex {
-    align-items: flex-end;
+.at-bottom-vflex {
+    align-content: flex-end;
 }
 
 .around-item-flex {
