@@ -103,7 +103,7 @@ $pacifico: 'Pacifico', cursive;
   }
 }
 
-//Establece un los tamaños de fuente en un rango de 8 a 44px y en rem con rango de 1 a 41rem
+//Establece un los tamaños de fuente en un rango de 8 a 44px y en rem con rango de 0 a 4rem y saltos de 0.1rem
 @mixin f-size {
   @for $i from 1 to 37 {
     $sizeValue: 7 + $i;
