@@ -1,6 +1,6 @@
 /*TABLE STYLING
 
-Crea bordes en los estilos: sólido, punteado, guión y doble en un rango de 1 a 10px */
+Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 10px */
 
 @mixin styles-border {
   @for $i from 1 through 10 {
@@ -23,7 +23,7 @@ Crea bordes en los estilos: sólido, punteado, guión y doble en un rango de 1 a
   }
 }
 
-//Crea bordes específicos (top, bottom, left, right) en línea solida color gris que van de 1 a 10px
+//Crea bordes especificos (top, bottom, left, right) en linea solida color gris que van de 1 a 10px
 
 @mixin direction-border {
   @for $i from 1 through 10 {
@@ -144,7 +144,7 @@ Crea bordes en los estilos: sólido, punteado, guión y doble en un rango de 1 a
   background-color: $gray300;
 }
 
-//Estilo de líneas grises de fondo intercaladas
+//Estilo de lineas grises de fondo intercaladas
 .stripped-table{
   tr:nth-child(even){
     background-color: #c7c7c7;

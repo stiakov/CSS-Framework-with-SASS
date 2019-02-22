@@ -1,14 +1,14 @@
-//Activa flex
+/*Activa flex*/
 .d-flex {
     display: flex;
 }
 
-//Activa la dirección en fila
 .dir-flex-row {
     flex-direction: row
 }
+/*Activa la direccion en fila*/
 
-//Activa la dirección en columna
+//Activa la direccion en columna
 .dir-flex-col {
     flex-direction: column
 }
@@ -68,7 +68,7 @@
     justify-content: space-around;
 }
 
-//Posiciona elementos con el espacio uniforme entre líneas
+//Posiciona elementos con el espacio uniforme entre lineas
 .between-item-flex {
     justify-content: space-between;
 }

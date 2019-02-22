@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Merriweather:300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Anton|Arvo:400,400i,700,700i|Pacifico");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -2450,168 +2449,6 @@ table {
     -webkit-transform: rotate(180deg) translate(-15em) rotate(-180deg);
     -ms-transform: rotate(180deg) translate(-15em) rotate(-180deg);
     transform: rotate(180deg) translate(-15em) rotate(-180deg); } }
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
-
-body {
-  line-height: 1.5; }
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 400;
-  color: #000; }
-
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  margin-top: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold; }
-
-h1, .h1 {
-  margin-bottom: 0.18756em;
-  font-size: 1.9994em;
-  line-height: 1.12534; }
-  @media (min-width: 43.75em) {
-    h1, .h1 {
-      margin-bottom: 0.13264em;
-      font-size: 2.82715em;
-      line-height: 1.06114; } }
-  @media (min-width: 56.25em) {
-    h1, .h1 {
-      margin-bottom: 0.09381em;
-      font-size: 3.99758em;
-      line-height: 0.93807; } }
-
-h2, .h2 {
-  margin-bottom: 0.26521em;
-  font-size: 1.414em;
-  line-height: 1.32603; }
-  @media (min-width: 43.75em) {
-    h2, .h2 {
-      margin-bottom: 0.18756em;
-      font-size: 1.9994em;
-      line-height: 1.12534; } }
-  @media (min-width: 56.25em) {
-    h2, .h2 {
-      margin-bottom: 0.13264em;
-      font-size: 2.82715em;
-      line-height: 1.06114; } }
-
-h3, .h3 {
-  margin-bottom: 0.26521em;
-  font-size: 1.414em;
-  line-height: 1.32603; }
-  @media (min-width: 56.25em) {
-    h3, .h3 {
-      margin-bottom: 0.18756em;
-      font-size: 1.9994em;
-      line-height: 1.12534; } }
-
-h4, .h4 {
-  margin-bottom: 0.26521em;
-  font-size: 1.414em;
-  line-height: 1.32603; }
-
-h5, .h5,
-h6, .h6 {
-  margin-bottom: 0.375em;
-  font-size: 1em;
-  line-height: 1.5; }
-
-p {
-  margin-top: 0;
-  margin-bottom: 1.5em;
-  padding-top: 0;
-  padding-bottom: 0;
-  max-width: 36em; }
-  @media (min-width: 43.75em) {
-    p {
-      text-align: justify; } }
-
-p + p {
-  margin-top: -1.5em;
-  text-indent: 1.5em; }
-
-small,
-.font-small {
-  font-size: 0.70721em;
-  line-height: 1.59075; }
-
-em {
-  font-style: italic; }
-
-strong {
-  font-weight: bold; }
-
-blockquote {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  margin-left: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 1.5em;
-  border-left: 6px solid gray;
-  font-family: Georgia, "Times New Roman", serif; }
-  blockquote p {
-    margin-bottom: 0.75em; }
-  blockquote footer cite:before {
-    content: " – "; }
-
-pre,
-code {
-  font-family: "Lucida Console", Monaco, monospace; }
-
-time,
-.time {
-  text-transform: uppercase; }
-
-ol,
-ul,
-dl {
-  margin-top: 0;
-  margin-bottom: 1.5em;
-  margin-left: 1.5em;
-  padding-top: 0;
-  padding-bottom: 0; }
-
-ul ul,
-ol ol,
-dl dl {
-  margin-left: 0; }
-
-ul {
-  list-style: disc; }
-
-ol {
-  list-style: decimal; }
-
-abbr {
-  font-variant: small-caps;
-  font-weight: 600;
-  text-transform: lowercase; }
-
-abbr[title]:hover {
-  cursor: help; }
-
-hr {
-  margin-top: 1.5em;
-  margin-bottom: 0;
-  border: none;
-  border-top-color: #000;
-  border-top-style: solid;
-  border-top-width: 1px;
-  padding-top: 1.4375em; }
-
 /*DARKENING AND LIGHTENING COLORS*/
 .bg-pink-100 {
   background: #eac5cf; }
@@ -2993,12 +2830,14 @@ rango 100 - 1200 con saltos de 100 en 100
 .color-gray-100
 
 */
+/*Activa flex*/
 .d-flex {
   display: flex; }
 
 .dir-flex-row {
   flex-direction: row; }
 
+/*Activa la direccion en fila*/
 .dir-flex-col {
   flex-direction: column; }
 
@@ -3038,6 +2877,8 @@ rango 100 - 1200 con saltos de 100 en 100
 .between-item-flex {
   justify-content: space-between; }
 
+/*MIXINS
+Se crea una escala de ordenes para el posicionamiento, comprende del 1 al 12*/
 .order-1 {
   order: 1; }
 
@@ -3082,6 +2923,10 @@ rango 100 - 1200 con saltos de 100 en 100
 
 .order-neg-1 {
   order: -1; }
+
+.wrapper {
+  display: flex;
+  justify-content: center; }
 
 .h-1 {
   height: 1px; }
@@ -5015,10 +4860,6 @@ rango 100 - 1200 con saltos de 100 en 100
 .w-100-per {
   width: 100%; }
 
-.wrapper {
-  display: flex;
-  justify-content: center; }
-
 @media only screen and (max-width: 1023px) {
   .col-md-12 {
     width: 100%; }
@@ -5283,6 +5124,18 @@ rango 100 - 1200 con saltos de 100 en 100
 
   .w-sm-100-per {
     width: 100%; } }
+/* 
+.col-12 ->  [Rango: 1 a 12] - Asigna el ancho a doce columnas del grid lo que equivale al 100% del contenedor.
+.col-12-vw ->  [Rango: 1 a 12] - Asigna el ancho a doce columnas del grid lo que equivale al 100% del ancho de la pantalla.
+.w-5-per -> [Rango: 5 a 100 con saltos de 5 unidades] Asigna el ancho de una columna o contenedor al porcentaje que determine el nombre de la clase.
+.col-md-12 -> [Rango: 1 a 12] - las clases col-md-## aplican para pantallas con tamanos superiores a 640px y menores a 1024px.
+.col-md-12-vw -> [Rango: 1 a 12] - las clases col-md-##-vw aplican para pantallas con tamanos superiores a 640px y menores a 1024px.
+.w-md-5-per -> [Rango: 5 a 100 con saltos de 5 unidades] Asigna el ancho de una columna o contenedor al porcentaje que determine el nombre de la clase.
+.col-sm-12 -> [Rango: 1 a 12] - las clases col-md-## aplican para pantallas con tamanos superiores a 640px y menores a 1024px.
+.col-sm-12-vw -> [Rango: 1 a 12] - las clases col-md-##-vw aplican para pantallas con tamanos superiores a 640px y menores a 1024px.
+.w-sm-5-per -> [Rango: 5 a 100 con saltos de 5 unidades] Asigna el ancho de una columna o contenedor al porcentaje que determine el nombre de la clase.
+.h-1 -> [Rango: 1 a 600 px] Asigna la altura de un contenedor entre 1 y 600 pixeles segun el numero que determine en la clase
+*/
 .m-lr-auto {
   margin: 0 auto; }
 
@@ -6637,7 +6490,6 @@ rango 100 - 1200 con saltos de 100 en 100
   padding-left: 80px; }
 
 /*SETTING DEFAULT FONTS*/
-/*SETTING UP FONT VARIABLES*/
 .f-family-roboto {
   font-family: "Roboto", sans-serif; }
 
@@ -7154,7 +7006,6 @@ rango 100 - 1200 con saltos de 100 en 100
   font-size: 4rem; }
 
 /*SETTING UP CLASSES WITH FIXED VALUES*/
-/*HIDING TEXT*/
 .display-none {
   display: none; }
 
@@ -7199,8 +7050,7 @@ rango 100 - 1200 con saltos de 100 en 100
   white-space: nowrap; }
 
 .whitespace-preline {
-  white-space: pre-line;
-  /*preline makes white spaces to turn into one*/ }
+  white-space: pre-line; }
 
 .whitespace-prewrap {
   white-space: pre-wrap; }
@@ -7215,7 +7065,10 @@ rango 100 - 1200 con saltos de 100 en 100
 .text-line-through {
   text-decoration-line: line-through; }
 
-/*TEXT DECORATION STYLE*/
+/*TEXT DECORATION STYLE
+
+Establece que la linea que decora el texto puede tomar los siguientes estilos: solido, doble, punteada y con guion.
+*/
 .text-line-solid {
   text-decoration-style: solid; }
 
@@ -7239,7 +7092,10 @@ rango 100 - 1200 con saltos de 100 en 100
 .text-small-cap {
   font-variant: small-caps; }
 
-/*TEXT ALIGN*/
+/*TEXT ALIGN
+
+Establece que el texto puede alinearse a centro, izquierda, derecha y de manera justificada
+*/
 .text-align-center {
   text-align: center; }
 
@@ -7252,8 +7108,9 @@ rango 100 - 1200 con saltos de 100 en 100
 .text-align-justify {
   text-align: justify; }
 
-/*TABLE STYLING*/
-/*BORDERS*/
+/*TABLE STYLING
+
+Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 10px */
 /*INCLUDES*/
 .border-solid-1 {
   border: 1px solid #b4b4b4; }
@@ -7867,12 +7724,6 @@ rango 100 - 1200 con saltos de 100 en 100
   empty-cells: hide; }
 
 /*ALIGNING IMAGES*/
-/*
-.float-none -> Asigna float none a los elementos que tienen posición diferente a absolut
-.float-right -> Asigna float none a los elementos que tienen posición diferente a absolut
-.float-left -> Asigna float none a los elementos que tienen posición diferente a absolut
-.clear -> Limpia ambos lados del contenedor para evitar tener cajas flotantes adyacentes.
-*/
 /*INCLUDES*/
 .float-none {
   float: none; }
@@ -8012,6 +7863,15 @@ rango 100 - 1200 con saltos de 100 en 100
 .img-grayscale-100 {
   filter: grayscale(100%); }
 
+/*
+.float-none -> Asigna float none a los elementos que tienen posicion diferente a absolut
+.float-right -> Asigna float none a los elementos que tienen posicion diferente a absolut
+.float-left -> Asigna float none a los elementos que tienen posicion diferente a absolut
+.clear -> Limpia ambos lados del contenedor para evitar tener cajas flotantes adyacentes.
+
+.img-opacity-5 -> Rango 5, 10, 15 ... 100. Setea la opacidad de una imagen siendo 5 el minimo de opacidad y 100 es el max.
+.img-grayscale-5 -> Rango 5, 10, 15 ... 100. Setea la escala de grises de una imagen siendo 5 el minimo de color y 100 el max.
+*/
 .main-container {
   width: 100vw;
   height: auto; }
