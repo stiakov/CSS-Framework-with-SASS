@@ -111,7 +111,6 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 .table{
 	border-spacing: 0;
   width: 100%;
-  border-bottom: .1rem solid black;
 }
 
 /*SETTING UP CLASSES WITH FIXED VALUES*/
@@ -147,7 +146,7 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 //Estilo de lineas grises de fondo intercaladas
 .stripped-table{
   tr:nth-child(even){
-    background-color: #c7c7c7;
+    background-color: #F5F3F3;
   }
 }
 
