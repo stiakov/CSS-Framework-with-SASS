@@ -1,13 +1,19 @@
 //Establece margenes y paddings (top, left, right, bottom) en un rango de 1 a 20px y de 1 a 100px aumentando de saltos de 5px
 
 @mixin margin_padding_setter {
-  .m-lr-auto { margin: 0 auto;}
+  .m-lr-auto { 
+    margin-left: auto;
+    margin-right: auto;}
   .m-0 { margin: 0;}
   .p-0 { padding: 0;}
   @for $i from 1 through 20 {
     .m-#{$i} {margin: #{$i}px; }      
-    .m-lr-#{$i} {margin: 0 #{$i}px; }      
-    .m-tb-#{$i} {margin: #{$i}px 0; }      
+    .m-lr-#{$i} {
+      margin-left: #{$i}px;
+      margin-right: #{$i}px; }      
+    .m-tb-#{$i} {
+      margin-top: #{$i}px;
+      margin-bottom: #{$i}px }      
     .m-t-#{$i} {margin-top: #{$i}px; }      
     .m-r-#{$i} {margin-right: #{$i}px; }      
     .m-b-#{$i} {margin-bottom: #{$i}px; }      
@@ -16,8 +22,14 @@
   $accum: 25;
   @for $i from 1 through 12 {
     .m-#{$accum} {margin: #{$accum}px; }      
-    .m-lr-#{$accum} {margin: 0 #{$accum}px; }      
-    .m-tb-#{$accum} {margin: #{$accum}px 0; }      
+    .m-lr-#{$accum} {
+      margin-left: #{$accum}px;
+      margin-right: #{accum}px;
+    }      
+    .m-tb-#{$accum} {
+      margin-top: #{$accum}px;
+      margin-bottom: #{accum}px;
+    }      
     .m-t-#{$accum} {margin-top: #{$accum}px; }      
     .m-r-#{$accum} {margin-right: #{$accum}px; }      
     .m-b-#{$accum} {margin-bottom: #{$accum}px; }      
@@ -26,8 +38,14 @@
   }
   @for $i from 1 through 20 {
     .p-#{$i} {padding: #{$i}px; }      
-    .p-lr-#{$i} {padding: 0 #{$i}px; }      
-    .p-tb-#{$i} {padding: #{$i}px 0; }      
+    .p-lr-#{$i} {
+      padding-left: #{$i}px;
+      padding-right: #{$i}px;
+    }      
+    .p-tb-#{$i} {
+      padding-top: #{$i}px 0;
+      padding-bottom: #{$i}px;
+    }      
     .p-t-#{$i} {padding-top: #{$i}px; }      
     .p-r-#{$i} {padding-right: #{$i}px; }      
     .p-b-#{$i} {padding-bottom: #{$i}px; }      
@@ -36,8 +54,12 @@
   $accum: 25;
   @for $i from 1 through 12 {
     .p-#{$accum} {padding: #{$accum}px; }      
-    .p-lr-#{$accum} {padding: 0 #{$accum}px; }      
-    .p-tb-#{$accum} {padding: #{$accum}px 0; }      
+    .p-lr-#{$accum} {
+      padding-left: #{$accum}px;    
+      padding-right: #{$accum}px; }      
+    .p-tb-#{$accum} {
+      padding-top: #{$accum}px;    
+      padding-bottom: #{$accum}px; }      
     .p-t-#{$accum} {padding-top: #{$accum}px; }      
     .p-r-#{$accum} {padding-right: #{$accum}px; }      
     .p-b-#{$accum} {padding-bottom: #{$accum}px; }      
