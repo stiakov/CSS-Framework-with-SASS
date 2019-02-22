@@ -49,8 +49,14 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 //Crea bordes redondeados para tablas, oscila entre el 1% y el 25% 
 @mixin rounded-border {
   @for $i from 1 through 25 {
-    .table-rounded-border-#{$i} {
+    .rounded-border-#{$i}-px {
       border-radius: #{$i}px;
+    }
+  }
+  @for $i from 1 through 100 {
+    $res: (percentage($i)/100);
+    .rounded-border-#{$i}-per {
+      border-radius:#{$res};
     }
   }
 }

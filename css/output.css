@@ -4824,80 +4824,380 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 .border-double-10 {
   border: 10px double #b4b4b4; }
 
-.table-rounded-border-1 {
+.rounded-border-1-px {
   border-radius: 1px; }
 
-.table-rounded-border-2 {
+.rounded-border-2-px {
   border-radius: 2px; }
 
-.table-rounded-border-3 {
+.rounded-border-3-px {
   border-radius: 3px; }
 
-.table-rounded-border-4 {
+.rounded-border-4-px {
   border-radius: 4px; }
 
-.table-rounded-border-5 {
+.rounded-border-5-px {
   border-radius: 5px; }
 
-.table-rounded-border-6 {
+.rounded-border-6-px {
   border-radius: 6px; }
 
-.table-rounded-border-7 {
+.rounded-border-7-px {
   border-radius: 7px; }
 
-.table-rounded-border-8 {
+.rounded-border-8-px {
   border-radius: 8px; }
 
-.table-rounded-border-9 {
+.rounded-border-9-px {
   border-radius: 9px; }
 
-.table-rounded-border-10 {
+.rounded-border-10-px {
   border-radius: 10px; }
 
-.table-rounded-border-11 {
+.rounded-border-11-px {
   border-radius: 11px; }
 
-.table-rounded-border-12 {
+.rounded-border-12-px {
   border-radius: 12px; }
 
-.table-rounded-border-13 {
+.rounded-border-13-px {
   border-radius: 13px; }
 
-.table-rounded-border-14 {
+.rounded-border-14-px {
   border-radius: 14px; }
 
-.table-rounded-border-15 {
+.rounded-border-15-px {
   border-radius: 15px; }
 
-.table-rounded-border-16 {
+.rounded-border-16-px {
   border-radius: 16px; }
 
-.table-rounded-border-17 {
+.rounded-border-17-px {
   border-radius: 17px; }
 
-.table-rounded-border-18 {
+.rounded-border-18-px {
   border-radius: 18px; }
 
-.table-rounded-border-19 {
+.rounded-border-19-px {
   border-radius: 19px; }
 
-.table-rounded-border-20 {
+.rounded-border-20-px {
   border-radius: 20px; }
 
-.table-rounded-border-21 {
+.rounded-border-21-px {
   border-radius: 21px; }
 
-.table-rounded-border-22 {
+.rounded-border-22-px {
   border-radius: 22px; }
 
-.table-rounded-border-23 {
+.rounded-border-23-px {
   border-radius: 23px; }
 
-.table-rounded-border-24 {
+.rounded-border-24-px {
   border-radius: 24px; }
 
-.table-rounded-border-25 {
+.rounded-border-25-px {
   border-radius: 25px; }
+
+.rounded-border-1-per {
+  border-radius: 1%; }
+
+.rounded-border-2-per {
+  border-radius: 2%; }
+
+.rounded-border-3-per {
+  border-radius: 3%; }
+
+.rounded-border-4-per {
+  border-radius: 4%; }
+
+.rounded-border-5-per {
+  border-radius: 5%; }
+
+.rounded-border-6-per {
+  border-radius: 6%; }
+
+.rounded-border-7-per {
+  border-radius: 7%; }
+
+.rounded-border-8-per {
+  border-radius: 8%; }
+
+.rounded-border-9-per {
+  border-radius: 9%; }
+
+.rounded-border-10-per {
+  border-radius: 10%; }
+
+.rounded-border-11-per {
+  border-radius: 11%; }
+
+.rounded-border-12-per {
+  border-radius: 12%; }
+
+.rounded-border-13-per {
+  border-radius: 13%; }
+
+.rounded-border-14-per {
+  border-radius: 14%; }
+
+.rounded-border-15-per {
+  border-radius: 15%; }
+
+.rounded-border-16-per {
+  border-radius: 16%; }
+
+.rounded-border-17-per {
+  border-radius: 17%; }
+
+.rounded-border-18-per {
+  border-radius: 18%; }
+
+.rounded-border-19-per {
+  border-radius: 19%; }
+
+.rounded-border-20-per {
+  border-radius: 20%; }
+
+.rounded-border-21-per {
+  border-radius: 21%; }
+
+.rounded-border-22-per {
+  border-radius: 22%; }
+
+.rounded-border-23-per {
+  border-radius: 23%; }
+
+.rounded-border-24-per {
+  border-radius: 24%; }
+
+.rounded-border-25-per {
+  border-radius: 25%; }
+
+.rounded-border-26-per {
+  border-radius: 26%; }
+
+.rounded-border-27-per {
+  border-radius: 27%; }
+
+.rounded-border-28-per {
+  border-radius: 28%; }
+
+.rounded-border-29-per {
+  border-radius: 29%; }
+
+.rounded-border-30-per {
+  border-radius: 30%; }
+
+.rounded-border-31-per {
+  border-radius: 31%; }
+
+.rounded-border-32-per {
+  border-radius: 32%; }
+
+.rounded-border-33-per {
+  border-radius: 33%; }
+
+.rounded-border-34-per {
+  border-radius: 34%; }
+
+.rounded-border-35-per {
+  border-radius: 35%; }
+
+.rounded-border-36-per {
+  border-radius: 36%; }
+
+.rounded-border-37-per {
+  border-radius: 37%; }
+
+.rounded-border-38-per {
+  border-radius: 38%; }
+
+.rounded-border-39-per {
+  border-radius: 39%; }
+
+.rounded-border-40-per {
+  border-radius: 40%; }
+
+.rounded-border-41-per {
+  border-radius: 41%; }
+
+.rounded-border-42-per {
+  border-radius: 42%; }
+
+.rounded-border-43-per {
+  border-radius: 43%; }
+
+.rounded-border-44-per {
+  border-radius: 44%; }
+
+.rounded-border-45-per {
+  border-radius: 45%; }
+
+.rounded-border-46-per {
+  border-radius: 46%; }
+
+.rounded-border-47-per {
+  border-radius: 47%; }
+
+.rounded-border-48-per {
+  border-radius: 48%; }
+
+.rounded-border-49-per {
+  border-radius: 49%; }
+
+.rounded-border-50-per {
+  border-radius: 50%; }
+
+.rounded-border-51-per {
+  border-radius: 51%; }
+
+.rounded-border-52-per {
+  border-radius: 52%; }
+
+.rounded-border-53-per {
+  border-radius: 53%; }
+
+.rounded-border-54-per {
+  border-radius: 54%; }
+
+.rounded-border-55-per {
+  border-radius: 55%; }
+
+.rounded-border-56-per {
+  border-radius: 56%; }
+
+.rounded-border-57-per {
+  border-radius: 57%; }
+
+.rounded-border-58-per {
+  border-radius: 58%; }
+
+.rounded-border-59-per {
+  border-radius: 59%; }
+
+.rounded-border-60-per {
+  border-radius: 60%; }
+
+.rounded-border-61-per {
+  border-radius: 61%; }
+
+.rounded-border-62-per {
+  border-radius: 62%; }
+
+.rounded-border-63-per {
+  border-radius: 63%; }
+
+.rounded-border-64-per {
+  border-radius: 64%; }
+
+.rounded-border-65-per {
+  border-radius: 65%; }
+
+.rounded-border-66-per {
+  border-radius: 66%; }
+
+.rounded-border-67-per {
+  border-radius: 67%; }
+
+.rounded-border-68-per {
+  border-radius: 68%; }
+
+.rounded-border-69-per {
+  border-radius: 69%; }
+
+.rounded-border-70-per {
+  border-radius: 70%; }
+
+.rounded-border-71-per {
+  border-radius: 71%; }
+
+.rounded-border-72-per {
+  border-radius: 72%; }
+
+.rounded-border-73-per {
+  border-radius: 73%; }
+
+.rounded-border-74-per {
+  border-radius: 74%; }
+
+.rounded-border-75-per {
+  border-radius: 75%; }
+
+.rounded-border-76-per {
+  border-radius: 76%; }
+
+.rounded-border-77-per {
+  border-radius: 77%; }
+
+.rounded-border-78-per {
+  border-radius: 78%; }
+
+.rounded-border-79-per {
+  border-radius: 79%; }
+
+.rounded-border-80-per {
+  border-radius: 80%; }
+
+.rounded-border-81-per {
+  border-radius: 81%; }
+
+.rounded-border-82-per {
+  border-radius: 82%; }
+
+.rounded-border-83-per {
+  border-radius: 83%; }
+
+.rounded-border-84-per {
+  border-radius: 84%; }
+
+.rounded-border-85-per {
+  border-radius: 85%; }
+
+.rounded-border-86-per {
+  border-radius: 86%; }
+
+.rounded-border-87-per {
+  border-radius: 87%; }
+
+.rounded-border-88-per {
+  border-radius: 88%; }
+
+.rounded-border-89-per {
+  border-radius: 89%; }
+
+.rounded-border-90-per {
+  border-radius: 90%; }
+
+.rounded-border-91-per {
+  border-radius: 91%; }
+
+.rounded-border-92-per {
+  border-radius: 92%; }
+
+.rounded-border-93-per {
+  border-radius: 93%; }
+
+.rounded-border-94-per {
+  border-radius: 94%; }
+
+.rounded-border-95-per {
+  border-radius: 95%; }
+
+.rounded-border-96-per {
+  border-radius: 96%; }
+
+.rounded-border-97-per {
+  border-radius: 97%; }
+
+.rounded-border-98-per {
+  border-radius: 98%; }
+
+.rounded-border-99-per {
+  border-radius: 99%; }
+
+.rounded-border-100-per {
+  border-radius: 100%; }
 
 .border-top-1 {
   border-top: 1px solid #b4b4b4; }
