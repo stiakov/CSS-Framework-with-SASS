@@ -55,31 +55,6 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
   }
 }
 
-//Crea espacio entre los bordes de las celdas, con un rango de 1px a 20px
-@mixin spacing-borders {
-  @for $i from 1 through 20 {
-    .table-spacing-border-px-#{$i} {
-      border-spacing: #{$i}px;
-    }
-  }
-}
-
-//Crea espacio entre los bordes de las celdas, con un rango de 1 a 9 con saltos de 1% y de 10 a 100 con saltos de 10%
-@mixin spacing-borders-percentage {
-  @for $i from 1 through 9 {
-    $res: (percentage($i)/100);
-    .spacing-border-#{$i}-per {
-      border-spacing:#{$res};
-    }
-  }
-  @for $i from 1 through 10 {
-    $res: (percentage($i)/10);
-    .spacing-border-#{$i*10}-per {
-      border-spacing:#{$res};
-    }
-  }
-}
-
 //Crea padding para la tabla en un rango de 1 a 30px con saltos de 1px y de 5 a 100% con saltos de 5%
 @mixin table-padding {
   @for $i from 1 through 30 {
@@ -101,16 +76,45 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 @include styles-border;
 @include rounded-border;
 @include direction-border;
-@include spacing-borders;
-@include spacing-borders-percentage;
 @include table-padding;
 
 /*DEFAULT BASIC TABLE SETTING*/
 
 //Settings de la tabla por default
 .table{
-	border-spacing: 0;
   width: 100%;
+  vertical-align: middle;
+  th {
+    border: .5px solid $gray300;
+    font-weight: bolder;
+    text-transform: capitalize;
+  }
+  td {
+    border: .5px solid $gray300;
+  }
+}
+.table-stripped {
+  vertical-align: middle;
+  width: 100%;
+  tr:nth-child(even){
+    background-color: #F5F3F3;
+  }
+  th {
+    border-bottom: .5px solid $gray300;
+    font-weight: bolder;
+    text-transform: capitalize;  
+  }
+}
+.table-borders {
+  vertical-align: middle;
+  width: 100%;
+  td, th{
+    border: .5px solid $gray300;
+  }
+  th {
+    font-weight: bolder;
+    text-transform: capitalize;
+  }
 }
 
 /*SETTING UP CLASSES WITH FIXED VALUES*/
@@ -133,7 +137,7 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 
 //Separa los bordes de las celdas, de manera que hay un espacio entre ellas
 .separate-borders {
-  border-top: 1px solid $gray300;
+  border: 1px solid $gray300;
   border-collapse: separate;
   border-spacing: 2px;
 }

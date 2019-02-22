@@ -4088,8 +4088,8 @@ Se crea una escala de ordenes para el posicionamiento, comprende del 1 al 12*/
 .f-family-lato {
   font-family: "Lato", sans-serif; }
 
-.f-family-merry {
-  font-family: "Merryweather", serif; }
+.f-family-merri {
+  font-family: "Merriweather", serif; }
 
 .f-family-arvo {
   font-family: "Arvo", serif; }
@@ -5019,123 +5019,6 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 .border-left-10 {
   border-left: 10px solid #b4b4b4; }
 
-.table-spacing-border-px-1 {
-  border-spacing: 1px; }
-
-.table-spacing-border-px-2 {
-  border-spacing: 2px; }
-
-.table-spacing-border-px-3 {
-  border-spacing: 3px; }
-
-.table-spacing-border-px-4 {
-  border-spacing: 4px; }
-
-.table-spacing-border-px-5 {
-  border-spacing: 5px; }
-
-.table-spacing-border-px-6 {
-  border-spacing: 6px; }
-
-.table-spacing-border-px-7 {
-  border-spacing: 7px; }
-
-.table-spacing-border-px-8 {
-  border-spacing: 8px; }
-
-.table-spacing-border-px-9 {
-  border-spacing: 9px; }
-
-.table-spacing-border-px-10 {
-  border-spacing: 10px; }
-
-.table-spacing-border-px-11 {
-  border-spacing: 11px; }
-
-.table-spacing-border-px-12 {
-  border-spacing: 12px; }
-
-.table-spacing-border-px-13 {
-  border-spacing: 13px; }
-
-.table-spacing-border-px-14 {
-  border-spacing: 14px; }
-
-.table-spacing-border-px-15 {
-  border-spacing: 15px; }
-
-.table-spacing-border-px-16 {
-  border-spacing: 16px; }
-
-.table-spacing-border-px-17 {
-  border-spacing: 17px; }
-
-.table-spacing-border-px-18 {
-  border-spacing: 18px; }
-
-.table-spacing-border-px-19 {
-  border-spacing: 19px; }
-
-.table-spacing-border-px-20 {
-  border-spacing: 20px; }
-
-.spacing-border-1-per {
-  border-spacing: 1%; }
-
-.spacing-border-2-per {
-  border-spacing: 2%; }
-
-.spacing-border-3-per {
-  border-spacing: 3%; }
-
-.spacing-border-4-per {
-  border-spacing: 4%; }
-
-.spacing-border-5-per {
-  border-spacing: 5%; }
-
-.spacing-border-6-per {
-  border-spacing: 6%; }
-
-.spacing-border-7-per {
-  border-spacing: 7%; }
-
-.spacing-border-8-per {
-  border-spacing: 8%; }
-
-.spacing-border-9-per {
-  border-spacing: 9%; }
-
-.spacing-border-10-per {
-  border-spacing: 10%; }
-
-.spacing-border-20-per {
-  border-spacing: 20%; }
-
-.spacing-border-30-per {
-  border-spacing: 30%; }
-
-.spacing-border-40-per {
-  border-spacing: 40%; }
-
-.spacing-border-50-per {
-  border-spacing: 50%; }
-
-.spacing-border-60-per {
-  border-spacing: 60%; }
-
-.spacing-border-70-per {
-  border-spacing: 70%; }
-
-.spacing-border-80-per {
-  border-spacing: 80%; }
-
-.spacing-border-90-per {
-  border-spacing: 90%; }
-
-.spacing-border-100-per {
-  border-spacing: 100%; }
-
 .table-padding-1 {
   padding: 1px; }
 
@@ -5288,8 +5171,33 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 
 /*DEFAULT BASIC TABLE SETTING*/
 .table {
-  border-spacing: 0;
+  width: 100%;
+  vertical-align: middle; }
+  .table th {
+    border: 0.5px solid #b4b4b4;
+    font-weight: bolder;
+    text-transform: capitalize; }
+  .table td {
+    border: 0.5px solid #b4b4b4; }
+
+.table-stripped {
+  vertical-align: middle;
   width: 100%; }
+  .table-stripped tr:nth-child(even) {
+    background-color: #F5F3F3; }
+  .table-stripped th {
+    border-bottom: 0.5px solid #b4b4b4;
+    font-weight: bolder;
+    text-transform: capitalize; }
+
+.table-borders {
+  vertical-align: middle;
+  width: 100%; }
+  .table-borders td, .table-borders th {
+    border: 0.5px solid #b4b4b4; }
+  .table-borders th {
+    font-weight: bolder;
+    text-transform: capitalize; }
 
 /*SETTING UP CLASSES WITH FIXED VALUES*/
 .hidden-border {
@@ -5303,7 +5211,7 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
   border-collapse: collapse; }
 
 .separate-borders {
-  border-top: 1px solid #b4b4b4;
+  border: 1px solid #b4b4b4;
   border-collapse: separate;
   border-spacing: 2px; }
 
@@ -5472,5 +5380,14 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 
 .overflow-hidden {
   overflow: hidden; }
+
+.cardboard {
+  background: white;
+  border: 0.5px solid #c8c8c8;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px #b4b3b3;
+  margin-top: 15px;
+  margin-bottom: 15px; }
 
 /*# sourceMappingURL=output.css.map */

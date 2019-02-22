@@ -20,3 +20,12 @@
   overflow: hidden;
 }
 
+.cardboard {
+  background: white;
+  border: .5px solid $gray200;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px rgb(180, 179, 179);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
