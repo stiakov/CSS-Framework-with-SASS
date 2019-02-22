@@ -4,7 +4,7 @@
 @import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/sass-files/_variables.scss";
 @import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/reset-scss/_reset-src.scss";
 @import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/saffron/saffron.scss";
-// @import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/typesettings-4.0.0/_typesettings.scss";
+@import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/typesettings-4.0.0/_typesettings.scss";
 @import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/bourbon/_bourbon.scss";
 @import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/sass-files/_colors.scss";
 @import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/sass-files/_flex.scss";
@@ -19,3 +19,8 @@
   width: 100vw;
   height: auto;
 }
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
