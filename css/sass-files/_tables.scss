@@ -127,11 +127,13 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 
 //Desaparece el espacio entre bordes
 .collapse-borders {
+  border-top: 1px solid $gray300;
   border-collapse: collapse;
 }
 
 //Separa los bordes de las celdas, de manera que hay un espacio entre ellas
 .separate-borders {
+  border-top: 1px solid $gray300;
   border-collapse: separate;
   border-spacing: 2px;
 }
