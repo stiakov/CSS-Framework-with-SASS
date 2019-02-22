@@ -5302,7 +5302,8 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
   border-collapse: collapse; }
 
 .separate-borders {
-  border-collapse: separate; }
+  border-collapse: separate;
+  border-spacing: 2px; }
 
 /*TABLE EFFECTS*/
 .table-row:hover {
