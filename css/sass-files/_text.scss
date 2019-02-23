@@ -50,9 +50,15 @@ $pacifico: 'Pacifico', cursive;
 
 //Crea clases para line-height con un rango de 1 a 20px y saltos de 1px
 @mixin l-height {
-  @for $i from 1 through 20 {
+  @for $i from 1 through 600 {
     .line-height-#{$i} {
       line-height: #{$i}px;
+    }
+  }
+  @for $i from 1 through 10 {
+    .center-text-container-#{$i}{
+     line-height: #{$i};
+     text-align:center;     
     }
   }
 }

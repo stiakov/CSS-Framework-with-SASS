@@ -61,6 +61,15 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
   }
 }
 
+@mixin column-width-max{
+  @for $i from 2 through 25{
+    .column-width-#{$i}{
+      $res: (percentage(1/($i)));
+      width: #{$res};
+    }
+  }
+}
+
 //Crea padding para la tabla en un rango de 1 a 30px con saltos de 1px y de 5 a 100% con saltos de 5%
 @mixin table-padding {
   @for $i from 1 through 30 {
@@ -83,6 +92,7 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 @include rounded-border;
 @include direction-border;
 @include table-padding;
+@include column-width-max;
 
 /*DEFAULT BASIC TABLE SETTING*/
 
@@ -123,6 +133,25 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
   }
 }
 
+.table-separate {
+  vertical-align: middle;
+  width: 100%;
+  border: .5px solid $gray300;
+  border-spacing: 2px;
+  border-collapse: separate;
+  height: 2rem;
+  tr:nth-child(even){
+    background-color: #F5F3F3;
+  }
+  td, th{
+    border: .5px solid $gray300;
+    padding: 5px;
+  }
+  th {
+    font-weight: bolder;
+    text-transform: capitalize;
+  }
+}
 /*SETTING UP CLASSES WITH FIXED VALUES*/
 
 //Esconde los bordes de la tabla
