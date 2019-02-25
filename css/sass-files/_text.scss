@@ -37,6 +37,21 @@ $pacifico: 'Pacifico', cursive;
   font-family: $pacifico;
 }
 
+.text-shadow {
+  text-shadow: 1px 1px 2px gray;
+  // -1px -1px 0 #000,
+  // 1px -1px 0 #000,
+  // -1px 1px 0 #000,
+  // 1px 1px 0 #000;
+}
+
+.text-shadow-outline {
+  text-shadow: 
+  -1px -1px 0 gray,
+  1px -1px 0 gray,
+  -1px 1px 0 gray,
+  1px 1px 0 gray;
+}
 /*MIXINS*/
 
 //Crea clases para font weight con un rango de 100 a 900, con saltos de 100
@@ -230,6 +245,10 @@ $pacifico: 'Pacifico', cursive;
 //Coloca linea sobre el texto
 .text-overline {
   text-decoration-line: overline;
+}
+//Coloca linea sobre el texto
+.text-decoration-none {
+  text-decoration: none;
 }
 //Coloca linea a traves el texto
 .text-line-through {

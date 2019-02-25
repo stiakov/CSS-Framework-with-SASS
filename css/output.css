@@ -2320,6 +2320,66 @@ Se crea una escala de ordenes para el posicionamiento, comprende del 1 al 12*/
 .h-600 {
   height: 600px; }
 
+.h-5-vh {
+  height: 5vh; }
+
+.h-10-vh {
+  height: 10vh; }
+
+.h-15-vh {
+  height: 15vh; }
+
+.h-20-vh {
+  height: 20vh; }
+
+.h-25-vh {
+  height: 25vh; }
+
+.h-30-vh {
+  height: 30vh; }
+
+.h-35-vh {
+  height: 35vh; }
+
+.h-40-vh {
+  height: 40vh; }
+
+.h-45-vh {
+  height: 45vh; }
+
+.h-50-vh {
+  height: 50vh; }
+
+.h-55-vh {
+  height: 55vh; }
+
+.h-60-vh {
+  height: 60vh; }
+
+.h-65-vh {
+  height: 65vh; }
+
+.h-70-vh {
+  height: 70vh; }
+
+.h-75-vh {
+  height: 75vh; }
+
+.h-80-vh {
+  height: 80vh; }
+
+.h-85-vh {
+  height: 85vh; }
+
+.h-90-vh {
+  height: 90vh; }
+
+.h-95-vh {
+  height: 95vh; }
+
+.h-100-vh {
+  height: 100vh; }
+
 .col-12 {
   width: 100%; }
 
@@ -2727,6 +2787,7 @@ Se crea una escala de ordenes para el posicionamiento, comprende del 1 al 12*/
 .col-sm-12-vw -> [Rango: 1 a 12] - las clases col-md-##-vw aplican para pantallas con tamanos superiores a 640px y menores a 1024px.
 .w-sm-5-per -> [Rango: 5 a 100 con saltos de 5 unidades] Asigna el ancho de una columna o contenedor al porcentaje que determine el nombre de la clase.
 .h-1 -> [Rango: 1 a 600 px] Asigna la altura de un contenedor entre 1 y 600 pixeles segun el numero que determine en la clase
+.h-5-vw -> [Rango: 5 a 100 vw] Asigna la altura de un contenedor entre 5 y 100 viewWidth segun el numero que determine en la clase. El rango va saltando de .5
 */
 .m-lr-auto {
   margin-left: auto;
@@ -4228,6 +4289,12 @@ Se crea una escala de ordenes para el posicionamiento, comprende del 1 al 12*/
 
 .f-family-pacifico {
   font-family: "Pacifico", cursive; }
+
+.text-shadow {
+  text-shadow: 1px 1px 2px gray; }
+
+.text-shadow-outline {
+  text-shadow: -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray; }
 
 /*MIXINS*/
 /*INCLUDES*/
@@ -6563,6 +6630,9 @@ Se crea una escala de ordenes para el posicionamiento, comprende del 1 al 12*/
 .text-overline {
   text-decoration-line: overline; }
 
+.text-decoration-none {
+  text-decoration: none; }
+
 .text-line-through {
   text-decoration-line: line-through; }
 
@@ -7671,6 +7741,24 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 .img-opacity-5 -> Rango 5, 10, 15 ... 100. Setea la opacidad de una imagen siendo 5 el minimo de opacidad y 100 es el max.
 .img-grayscale-5 -> Rango 5, 10, 15 ... 100. Setea la escala de grises de una imagen siendo 5 el minimo de color y 100 el max.
 */
+.position-static {
+  position: static; }
+
+.position-relative {
+  position: relative; }
+
+.position-fixed {
+  position: fixed; }
+
+.position-absolute {
+  position: absolute; }
+
+.position-sticky {
+  position: sticky; }
+
+.basic-outline {
+  outline: #b4b4b4 solid thin; }
+
 .main-container {
   width: 100vw;
   height: auto; }
@@ -7686,5 +7774,24 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
   box-shadow: 5px 5px 5px #b4b3b3;
   margin-top: 15px;
   margin-bottom: 15px; }
+
+.main-background {
+  background: url(../img/pineapple-supply-co-142104-unsplash.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative; }
+
+.abs-position {
+  position: absolute; }
+
+.center-abs {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.block {
+  display: block; }
 
 /*# sourceMappingURL=output.css.map */
