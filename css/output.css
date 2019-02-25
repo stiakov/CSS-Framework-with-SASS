@@ -460,6 +460,9 @@ rango 100 - 1200 con saltos de 100 en 100
 .at-middle-vflex {
   align-content: center; }
 
+.align-end {
+  align-items: flex-end; }
+
 .at-bottom-vflex {
   align-content: flex-end; }
 

@@ -58,6 +58,9 @@
     align-content: center;
 }
 
+.align-end{
+    align-items: flex-end;
+}
 //Agrupa el contenido al final del contenedor (vertical)
 .at-bottom-vflex {
     align-content: flex-end;
