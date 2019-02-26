@@ -53,6 +53,11 @@
   @for $i from 1 through 600 {
     .h-#{$i} {height: #{$i}px; }
   }
+  @for $i from 1 through 20 {
+    $mult: ($i * 0.5vh * 10);
+    $name: ($i * 0.5 * 10);
+    .h-#{$name}-vh {height: $mult;}      
+  }
 }
 
 @include height_setter();
@@ -110,4 +115,5 @@ $breakpoints: (
 .col-sm-12-vw -> [Rango: 1 a 12] - las clases col-md-##-vw aplican para pantallas con tamanos superiores a 640px y menores a 1024px.
 .w-sm-5-per -> [Rango: 5 a 100 con saltos de 5 unidades] Asigna el ancho de una columna o contenedor al porcentaje que determine el nombre de la clase.
 .h-1 -> [Rango: 1 a 600 px] Asigna la altura de un contenedor entre 1 y 600 pixeles segun el numero que determine en la clase
+.h-5-vw -> [Rango: 5 a 100 vw] Asigna la altura de un contenedor entre 5 y 100 viewWidth segun el numero que determine en la clase. El rango va saltando de .5
 */

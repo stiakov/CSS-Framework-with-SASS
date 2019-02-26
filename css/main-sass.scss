@@ -10,6 +10,7 @@
 @import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/sass-files/_text.scss";
 @import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/sass-files/_tables.scss";
 @import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/sass-files/_images.scss";
+@import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/sass-files/_position.scss";
 
 .main-container {
   width: 100vw;
@@ -28,4 +29,27 @@
   box-shadow: 5px 5px 5px rgb(180, 179, 179);
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.main-background {
+  background: url(../img/pineapple-supply-co-142104-unsplash.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.abs-position {
+  position: absolute;
+}
+
+.center-abs {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.block {
+  display: block;
 }
