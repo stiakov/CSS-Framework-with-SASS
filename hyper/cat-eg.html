@@ -6,11 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../css/output.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../js/jquery.js"></script>
   <title>Basic Format for Catalogs</title>
 </head>
 
 <body>
-  <div class="main-background w-100-vw h-100-vh">
+  <div class="w-100-vw h-100-vh">
+    <div id="blurred-image-container">
+      <div class="img-src"></div>
+      <div class="img-src blurred-image"></div>
+    </div>
     <div class="abs-position center-abs">
       <div
         class="block font-size-40-rem m-lr-auto text-align-center d-flex f-family-pacifico at-middle-hflex at-center-vflex f-weight-400 color-gray-100 text-shadow">
@@ -23,7 +29,8 @@
         <ul class="flow-row-nowrap d-flex m-t-60 text-shadow" style="text-decoration: none">
           <li class="m-lr-15"><a class="text-decoration-none color-gray-1200 text-shadow" href="#grid">Grid</a></li>
           <li class="m-lr-15"><a class="text-decoration-none color-gray-1200 text-shadow" href="#tables">Tables</a></li>
-          <li class="m-lr-15"><a class="text-decoration-none color-gray-1200 text-shadow" href="#gradients">Gradients</a></li>
+          <li class="m-lr-15"><a class="text-decoration-none color-gray-1200 text-shadow"
+              href="#gradients">Gradients</a></li>
           <li class="m-lr-15"><a class="text-decoration-none color-gray-1200 text-shadow" href="#">Link 4</a></li>
           <li class="m-lr-15"><a class="text-decoration-none color-gray-1200 text-shadow" href="#">Link 5</a></li>
         </ul>
@@ -32,7 +39,7 @@
 
   </div>
 
-  <div class="main-container p-t-50 bg-gray-200">
+  <div class="main-container p-t-50">
     <div class="wrapper d-flex flow-col-nowrap">
       <div id="grid" class="border col-10 p-5 cardboard m-lr-auto">
         <div>
@@ -328,73 +335,73 @@
 
       </div>
 
-      <div id ="gradients" class="p-top-50">
-          <div class="wrapper col-12 between-item-flex">
-            <div class="border col-10 p-5">
-              <div>
-                <h4 class="m-lr-auto m-t-20 m-b-5 font-size-24">Color Gradients</h4>
+      <div id="gradients" class="p-top-50">
+        <div class="wrapper col-12 between-item-flex">
+          <div class="border col-10 p-5">
+            <div>
+              <h4 class="m-lr-auto m-t-20 m-b-5 font-size-24">Color Gradients</h4>
+            </div>
+            <div class="col-12 d-flex flow-row-wrap">
+              <div class="col-5 d-flex flow-col-wrap cardboard m-lr-auto">
+                <div class="bg-gray-100 d-flex w-90-per h-55 m-tb-5">Gray 100</div>
+                <div class="bg-gray-200 d-flex w-90-per h-55 m-tb-5">Gray 200</div>
+                <div class="bg-gray-300 d-flex w-90-per h-55 m-tb-5">Gray 300</div>
+                <div class="bg-gray-400 d-flex w-90-per h-55 m-tb-5">Gray 400</div>
+                <div class="bg-gray-500 d-flex w-90-per h-55 m-tb-5">Gray 500</div>
+                <div class="bg-gray-600 d-flex w-90-per h-55 m-tb-5">Gray 600</div>
+                <div class="bg-gray-700 d-flex w-90-per h-55 m-tb-5">Gray 700</div>
+                <div class="bg-gray-800 d-flex w-90-per h-55 m-tb-5">Gray 800</div>
+                <div class="bg-gray-900 d-flex w-90-per h-55 m-tb-5">Gray 900</div>
+                <div class="bg-gray-1000 d-flex w-90-per h-55 m-tb-5">Gray 1000</div>
+                <div class="bg-gray-1100 d-flex w-90-per h-55 m-tb-5">Gray 1100</div>
+                <div class="bg-gray-1200 d-flex w-90-per h-55 m-tb-5">Gray 1200</div>
               </div>
-              <div class="col-12 d-flex flow-row-wrap">
-                <div class="col-5 d-flex flow-col-wrap cardboard m-lr-auto">
-                  <div class="bg-gray-100 d-flex w-90-per h-55 m-tb-5">Gray 100</div>
-                  <div class="bg-gray-200 d-flex w-90-per h-55 m-tb-5">Gray 200</div>
-                  <div class="bg-gray-300 d-flex w-90-per h-55 m-tb-5">Gray 300</div>
-                  <div class="bg-gray-400 d-flex w-90-per h-55 m-tb-5">Gray 400</div>
-                  <div class="bg-gray-500 d-flex w-90-per h-55 m-tb-5">Gray 500</div>
-                  <div class="bg-gray-600 d-flex w-90-per h-55 m-tb-5">Gray 600</div>
-                  <div class="bg-gray-700 d-flex w-90-per h-55 m-tb-5">Gray 700</div>
-                  <div class="bg-gray-800 d-flex w-90-per h-55 m-tb-5">Gray 800</div>
-                  <div class="bg-gray-900 d-flex w-90-per h-55 m-tb-5">Gray 900</div>
-                  <div class="bg-gray-1000 d-flex w-90-per h-55 m-tb-5">Gray 1000</div>
-                  <div class="bg-gray-1100 d-flex w-90-per h-55 m-tb-5">Gray 1100</div>
-                  <div class="bg-gray-1200 d-flex w-90-per h-55 m-tb-5">Gray 1200</div>
-                </div>
-                <div class="col-5 d-flex flow-col-wrap cardboard m-lr-auto">
-                  <div class="bg-pink-100 d-flex w-90-per h-55 m-tb-5">pink 100</div>
-                  <div class="bg-pink-200 d-flex w-90-per h-55 m-tb-5">pink 200</div>
-                  <div class="bg-pink-300 d-flex w-90-per h-55 m-tb-5">pink 300</div>
-                  <div class="bg-pink-400 d-flex w-90-per h-55 m-tb-5">pink 400</div>
-                  <div class="bg-pink-500 d-flex w-90-per h-55 m-tb-5">pink 500</div>
-                  <div class="bg-pink-600 d-flex w-90-per h-55 m-tb-5">pink 600</div>
-                  <div class="bg-pink-700 d-flex w-90-per h-55 m-tb-5">pink 700</div>
-                  <div class="bg-pink-800 d-flex w-90-per h-55 m-tb-5">pink 800</div>
-                  <div class="bg-pink-900 d-flex w-90-per h-55 m-tb-5">pink 900</div>
-                  <div class="bg-pink-1000 d-flex w-90-per h-55 m-tb-5">pink 1000</div>
-                  <div class="bg-pink-1100 d-flex w-90-per h-55 m-tb-5">pink 1100</div>
-                  <div class="bg-pink-1200 d-flex w-90-per h-55 m-tb-5">pink 1200</div>
-                </div>
-                <div class="col-5 d-flex flow-col-wrap cardboard m-lr-auto">
-                  <div class="bg-purple-100 d-flex w-90-per h-55 m-tb-5">purple 100</div>
-                  <div class="bg-purple-200 d-flex w-90-per h-55 m-tb-5">purple 200</div>
-                  <div class="bg-purple-300 d-flex w-90-per h-55 m-tb-5">purple 300</div>
-                  <div class="bg-purple-400 d-flex w-90-per h-55 m-tb-5">purple 400</div>
-                  <div class="bg-purple-500 d-flex w-90-per h-55 m-tb-5">purple 500</div>
-                  <div class="bg-purple-600 d-flex w-90-per h-55 m-tb-5">purple 600</div>
-                  <div class="bg-purple-700 d-flex w-90-per h-55 m-tb-5">purple 700</div>
-                  <div class="bg-purple-800 d-flex w-90-per h-55 m-tb-5">purple 800</div>
-                  <div class="bg-purple-900 d-flex w-90-per h-55 m-tb-5">purple 900</div>
-                  <div class="bg-purple-1000 d-flex w-90-per h-55 m-tb-5">purple 1000</div>
-                  <div class="bg-purple-1100 d-flex w-90-per h-55 m-tb-5">purple 1100</div>
-                  <div class="bg-purple-1200 d-flex w-90-per h-55 m-tb-5">purple 1200</div>
-                </div>
-                <div class="col-5 d-flex flow-col-wrap cardboard m-lr-auto">
-                  <div class="bg-green-100 d-flex w-90-per h-55 m-tb-5">green 100</div>
-                  <div class="bg-green-200 d-flex w-90-per h-55 m-tb-5">green 200</div>
-                  <div class="bg-green-300 d-flex w-90-per h-55 m-tb-5">green 300</div>
-                  <div class="bg-green-400 d-flex w-90-per h-55 m-tb-5">green 400</div>
-                  <div class="bg-green-500 d-flex w-90-per h-55 m-tb-5">green 500</div>
-                  <div class="bg-green-600 d-flex w-90-per h-55 m-tb-5">green 600</div>
-                  <div class="bg-green-700 d-flex w-90-per h-55 m-tb-5">green 700</div>
-                  <div class="bg-green-800 d-flex w-90-per h-55 m-tb-5">green 800</div>
-                  <div class="bg-green-900 d-flex w-90-per h-55 m-tb-5">green 900</div>
-                  <div class="bg-green-1000 d-flex w-90-per h-55 m-tb-5">green 1000</div>
-                  <div class="bg-green-1100 d-flex w-90-per h-55 m-tb-5">green 1100</div>
-                  <div class="bg-green-1200 d-flex w-90-per h-55 m-tb-5">green 1200</div>
-                </div>
+              <div class="col-5 d-flex flow-col-wrap cardboard m-lr-auto">
+                <div class="bg-pink-100 d-flex w-90-per h-55 m-tb-5">pink 100</div>
+                <div class="bg-pink-200 d-flex w-90-per h-55 m-tb-5">pink 200</div>
+                <div class="bg-pink-300 d-flex w-90-per h-55 m-tb-5">pink 300</div>
+                <div class="bg-pink-400 d-flex w-90-per h-55 m-tb-5">pink 400</div>
+                <div class="bg-pink-500 d-flex w-90-per h-55 m-tb-5">pink 500</div>
+                <div class="bg-pink-600 d-flex w-90-per h-55 m-tb-5">pink 600</div>
+                <div class="bg-pink-700 d-flex w-90-per h-55 m-tb-5">pink 700</div>
+                <div class="bg-pink-800 d-flex w-90-per h-55 m-tb-5">pink 800</div>
+                <div class="bg-pink-900 d-flex w-90-per h-55 m-tb-5">pink 900</div>
+                <div class="bg-pink-1000 d-flex w-90-per h-55 m-tb-5">pink 1000</div>
+                <div class="bg-pink-1100 d-flex w-90-per h-55 m-tb-5">pink 1100</div>
+                <div class="bg-pink-1200 d-flex w-90-per h-55 m-tb-5">pink 1200</div>
+              </div>
+              <div class="col-5 d-flex flow-col-wrap cardboard m-lr-auto">
+                <div class="bg-purple-100 d-flex w-90-per h-55 m-tb-5">purple 100</div>
+                <div class="bg-purple-200 d-flex w-90-per h-55 m-tb-5">purple 200</div>
+                <div class="bg-purple-300 d-flex w-90-per h-55 m-tb-5">purple 300</div>
+                <div class="bg-purple-400 d-flex w-90-per h-55 m-tb-5">purple 400</div>
+                <div class="bg-purple-500 d-flex w-90-per h-55 m-tb-5">purple 500</div>
+                <div class="bg-purple-600 d-flex w-90-per h-55 m-tb-5">purple 600</div>
+                <div class="bg-purple-700 d-flex w-90-per h-55 m-tb-5">purple 700</div>
+                <div class="bg-purple-800 d-flex w-90-per h-55 m-tb-5">purple 800</div>
+                <div class="bg-purple-900 d-flex w-90-per h-55 m-tb-5">purple 900</div>
+                <div class="bg-purple-1000 d-flex w-90-per h-55 m-tb-5">purple 1000</div>
+                <div class="bg-purple-1100 d-flex w-90-per h-55 m-tb-5">purple 1100</div>
+                <div class="bg-purple-1200 d-flex w-90-per h-55 m-tb-5">purple 1200</div>
+              </div>
+              <div class="col-5 d-flex flow-col-wrap cardboard m-lr-auto">
+                <div class="bg-green-100 d-flex w-90-per h-55 m-tb-5">green 100</div>
+                <div class="bg-green-200 d-flex w-90-per h-55 m-tb-5">green 200</div>
+                <div class="bg-green-300 d-flex w-90-per h-55 m-tb-5">green 300</div>
+                <div class="bg-green-400 d-flex w-90-per h-55 m-tb-5">green 400</div>
+                <div class="bg-green-500 d-flex w-90-per h-55 m-tb-5">green 500</div>
+                <div class="bg-green-600 d-flex w-90-per h-55 m-tb-5">green 600</div>
+                <div class="bg-green-700 d-flex w-90-per h-55 m-tb-5">green 700</div>
+                <div class="bg-green-800 d-flex w-90-per h-55 m-tb-5">green 800</div>
+                <div class="bg-green-900 d-flex w-90-per h-55 m-tb-5">green 900</div>
+                <div class="bg-green-1000 d-flex w-90-per h-55 m-tb-5">green 1000</div>
+                <div class="bg-green-1100 d-flex w-90-per h-55 m-tb-5">green 1100</div>
+                <div class="bg-green-1200 d-flex w-90-per h-55 m-tb-5">green 1200</div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
     </div>
   </div>

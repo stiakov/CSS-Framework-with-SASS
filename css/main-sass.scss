@@ -1,16 +1,16 @@
 // @import "/Users/stiakov/Documents/microverse/the_odin_project/CSS-Framework-with-SASS/css/";
 // @import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/";
 
-@import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/sass-files/_variables.scss";
-@import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/reset-scss/_reset-src.scss";
-@import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/sass-files/_colors.scss";
-@import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/sass-files/_flex.scss";
-@import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/sass-files/_sizes.scss";
-@import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/sass-files/_paddings-margins.scss";
-@import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/sass-files/_text.scss";
-@import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/sass-files/_tables.scss";
-@import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/sass-files/_images.scss";
-@import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/sass-files/_position.scss";
+@import "/Users/stiakov/Documents/microverse/the_odin_project/CSS-Framework-with-SASS/css/sass-files/_variables.scss";
+@import "/Users/stiakov/Documents/microverse/the_odin_project/CSS-Framework-with-SASS/css/reset-scss/_reset-src.scss";
+@import "/Users/stiakov/Documents/microverse/the_odin_project/CSS-Framework-with-SASS/css/sass-files/_colors.scss";
+@import "/Users/stiakov/Documents/microverse/the_odin_project/CSS-Framework-with-SASS/css/sass-files/_flex.scss";
+@import "/Users/stiakov/Documents/microverse/the_odin_project/CSS-Framework-with-SASS/css/sass-files/_sizes.scss";
+@import "/Users/stiakov/Documents/microverse/the_odin_project/CSS-Framework-with-SASS/css/sass-files/_paddings-margins.scss";
+@import "/Users/stiakov/Documents/microverse/the_odin_project/CSS-Framework-with-SASS/css/sass-files/_text.scss";
+@import "/Users/stiakov/Documents/microverse/the_odin_project/CSS-Framework-with-SASS/css/sass-files/_tables.scss";
+@import "/Users/stiakov/Documents/microverse/the_odin_project/CSS-Framework-with-SASS/css/sass-files/_images.scss";
+@import "/Users/stiakov/Documents/microverse/the_odin_project/CSS-Framework-with-SASS/css/sass-files/_position.scss";
 
 .main-container {
   width: 100vw;
@@ -31,13 +31,44 @@
   margin-bottom: 15px;
 }
 
-.main-background {
-  background: url(../img/pineapple-supply-co-142104-unsplash.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+// .main-background {
+//   background: url(../img/pineapple-supply-co-142104-unsplash.jpg) no-repeat center center fixed; 
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+//   position: relative;
+// }
+
+#blurred-image-container {
+  display:block;
+  padding:0;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:-1;
+}
+
+.img-src { 
+  position: absolute;
+  background: url(../img/pineapple-supply-co-142104-unsplash.jpg) center center; 
   background-size: cover;
-  position: relative;
+  top: -10%;
+  bottom: 10%;
+  left: -10%;
+  right: 10%;
+  width:120%;
+  height:120%;
+}
+
+.img-src.blurred-image {
+  opacity:0;
+  -webkit-filter: blur(20px) brightness(0.7);
+  -ms-filter: blur(20px) brightness(0.7);
+  -o-filter: blur(20px) brightness(0.7);
+  filter: blur(20px) brightness(1);
 }
 
 .abs-position {
