@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-You can visit our live version [here](https://raw.githack.com/stiakov/CSS-Framework-with-SASS/development/index.html).
+You can visit our live version [here](https://stiakov.github.io/CSS-Framework-with-SASS/).
 
 
 ## Indications
